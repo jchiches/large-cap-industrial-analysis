@@ -1,0 +1,36 @@
+ticker,name,sub_industry
+GE,GE Aerospace,Aerospace & Defense
+RTX,RTX Corporation,Aerospace & Defense
+BA,Boeing,Aerospace & Defense
+LMT,Lockheed Martin,Aerospace & Defense
+NOC,Northrop Grumman,Aerospace & Defense
+GD,General Dynamics,Aerospace & Defense
+CAT,Caterpillar,Machinery
+DE,Deere & Company,Machinery
+CMI,Cummins,Machinery
+PCAR,PACCAR,Machinery
+PH,Parker-Hannifin,Machinery
+ITW,Illinois Tool Works,Machinery
+DOV,Dover Corporation,Machinery
+UNP,Union Pacific,Rail
+CSX,CSX Corporation,Rail
+NSC,Norfolk Southern,Rail
+UPS,United Parcel Service,Freight & Logistics
+FDX,FedEx,Freight & Logistics
+ODFL,Old Dominion Freight Line,Freight & Logistics
+HON,Honeywell International,Multi-Industry
+MMM,3M Company,Multi-Industry
+ETN,Eaton Corporation,Electrical Equipment
+EMR,Emerson Electric,Electrical Equipment
+ROK,Rockwell Automation,Electrical Equipment
+AME,AMETEK,Electrical Equipment
+TT,Trane Technologies,Building & HVAC
+CARR,Carrier Global,Building & HVAC
+JCI,Johnson Controls,Building & HVAC
+OTIS,Otis Worldwide,Building & HVAC
+WM,Waste Management,Commercial Services & Waste
+RSG,Republic Services,Commercial Services & Waste
+CTAS,Cintas,Commercial Services & Waste
+DAL,Delta Air Lines,Airlines
+UAL,United Airlines,Airlines
+LUV,Southwest Airlines,Airlines
