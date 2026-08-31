@@ -1,0 +1,56 @@
+ticker,name,group
+GE,GE Aerospace,Industrial
+RTX,RTX Corporation,Industrial
+CAT,Caterpillar,Industrial
+UNP,Union Pacific,Industrial
+HON,Honeywell,Industrial
+ETN,Eaton,Industrial
+BA,Boeing,Industrial
+DE,Deere & Co,Industrial
+ADP,Automatic Data Processing,Industrial
+LMT,Lockheed Martin,Industrial
+UPS,United Parcel Service,Industrial
+TDG,TransDigm,Industrial
+PH,Parker Hannifin,Industrial
+TT,Trane Technologies,Industrial
+GD,General Dynamics,Industrial
+WM,Waste Management,Industrial
+ITW,Illinois Tool Works,Industrial
+MMM,3M,Industrial
+CTAS,Cintas,Industrial
+NOC,Northrop Grumman,Industrial
+EMR,Emerson Electric,Industrial
+CSX,CSX,Industrial
+FDX,FedEx,Industrial
+NSC,Norfolk Southern,Industrial
+PCAR,PACCAR,Industrial
+CMI,Cummins,Industrial
+JCI,Johnson Controls,Industrial
+GWW,W.W. Grainger,Industrial
+URI,United Rentals,Industrial
+RSG,Republic Services,Industrial
+PAYX,Paychex,Industrial
+FAST,Fastenal,Industrial
+AME,AMETEK,Industrial
+OTIS,Otis Worldwide,Industrial
+CARR,Carrier Global,Industrial
+ODFL,Old Dominion Freight Line,Industrial
+VRSK,Verisk Analytics,Industrial
+IR,Ingersoll Rand,Industrial
+ROK,Rockwell Automation,Industrial
+DOV,Dover,Industrial
+WAB,Wabtec,Industrial
+HWM,Howmet Aerospace,Industrial
+LHX,L3Harris Technologies,Industrial
+AXON,Axon Enterprise,Industrial
+XYL,Xylem,Industrial
+EFX,Equifax,Industrial
+CPRT,Copart,Industrial
+DAL,Delta Air Lines,Industrial
+EXPD,Expeditors International,Industrial
+SWK,Stanley Black & Decker,Industrial
+XOM,ExxonMobil,Oil Major
+CVX,Chevron,Oil Major
+SHEL,Shell,Oil Major
+TTE,TotalEnergies,Oil Major
+BP,BP,Oil Major
