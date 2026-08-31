@@ -58,34 +58,74 @@ def year_end_series(px: pd.DataFrame) -> pd.DataFrame:
 
 
 CAP_SUFFIX = {"T": 1e12, "B": 1e9, "M": 1e6}
+UA = {"User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                     "AppleWebKit/537.36 (KHTML, like Gecko) "
+                     "Chrome/126.0 Safari/537.36")}
 
 
-def fetch_cap_history(tickers: list[str]) -> dict[str, dict[int, float]]:
-    """Year-end market caps from Macrotrends' annual market-cap tables.
+def caps_from_stockanalysis(ticker: str) -> dict[int, float]:
+    """Annual market caps scraped from stockanalysis.com's history table."""
+    url = f"https://stockanalysis.com/stocks/{ticker.lower()}/market-cap/"
+    for attempt in (1, 2):
+        r = requests.get(url, headers=UA, timeout=30)
+        if r.status_code == 429 and attempt == 1:
+            time.sleep(20)
+            continue
+        r.raise_for_status()
+        rows = re.findall(
+            r">(20\d{2})</td>\s*<td[^>]*>\$?([\d.,]+)\s*([TBM])?",
+            r.text,
+        )
+        return {int(y): float(v.replace(",", "")) * CAP_SUFFIX.get(sfx or "B", 1e9)
+                for y, v, sfx in rows}
+    return {}
 
-    Macrotrends aggregates dual-listed structures (BHP, Rio Tinto) and ADRs
-    into one company-level cap, which EDGAR share counts do not.
-    """
-    headers = {"User-Agent": "Mozilla/5.0 (research script)"}
+
+def caps_from_shares(ticker: str, raw_ye: pd.Series,
+                     current_cap: float | None) -> dict[int, float]:
+    """Fallback: raw year-end close x Yahoo share-count history, calibrated
+    so the latest estimate matches today's known market cap (absorbs ADR
+    ratios and unit quirks, which are constant over time)."""
+    shares = yf.Ticker(ticker).get_shares_full(start="2009-06-01")
+    if shares is None or not len(shares):
+        return {}
+    shares = shares[~shares.index.duplicated(keep="last")]
+    sh_by_year = shares.groupby(shares.index.year).last()
+    est = {int(y): float(raw_ye[y]) * float(sh_by_year[y])
+           for y in sh_by_year.index if y in raw_ye.index}
+    if not est:
+        return {}
+    if current_cap:
+        latest = max(est)
+        factor = current_cap / est[latest]
+        if 0.2 < factor < 5:
+            est = {y: c * factor for y, c in est.items()}
+    return est
+
+
+def fetch_cap_history(tickers: list[str], raw_ye: pd.DataFrame,
+                      current: dict[str, float | None]) -> dict[str, dict[int, float]]:
     out: dict[str, dict[int, float]] = {}
     for t in tickers:
-        url = f"https://www.macrotrends.net/stocks/charts/{t}/x/market-cap"
+        caps: dict[int, float] = {}
         try:
-            r = requests.get(url, headers=headers, timeout=30)
-            r.raise_for_status()
-            rows = re.findall(
-                r"<td[^>]*>(20\d{2})</td>\s*<td[^>]*>\$([\d.,]+)\s*([TBM])</td>",
-                r.text,
-            )
-            caps = {int(y): float(v.replace(",", "")) * CAP_SUFFIX[sfx]
-                    for y, v, sfx in rows}
-            if caps:
-                out[t] = caps
-            print(f"{t}: {len(caps)} years of market cap"
-                  + (f" ({min(caps)}-{max(caps)})" if caps else ""))
+            caps = caps_from_stockanalysis(t)
+            src = "stockanalysis"
         except Exception as exc:
-            print(f"WARNING: no cap history for {t}: {exc}")
-        time.sleep(1)
+            print(f"{t}: stockanalysis failed ({exc}); trying share counts")
+        if not caps:
+            try:
+                caps = caps_from_shares(t, raw_ye.get(t, pd.Series(dtype=float)),
+                                        current.get(t))
+                src = "yahoo shares"
+            except Exception as exc:
+                print(f"WARNING: no cap history for {t}: {exc}")
+                src = "none"
+        if caps:
+            out[t] = caps
+            print(f"{t}: {len(caps)} years of market cap via {src} "
+                  f"({min(caps)}-{max(caps)})")
+        time.sleep(2)
     return out
 
 
@@ -145,7 +185,12 @@ def main() -> None:
 
     live = [t for t in tickers if t in px.columns]
     caps = fetch_market_caps(live)
-    cap_hist = fetch_cap_history(live)
+    raw = yf.download(live, start=START, end=END, interval="1mo",
+                      auto_adjust=False, progress=False)["Close"]
+    if isinstance(raw, pd.Series):
+        raw = raw.to_frame(live[0])
+    raw_ye = year_end_series(raw.dropna(how="all"))
+    cap_hist = fetch_cap_history(live, raw_ye, caps)
     companies = {
         t: {
             "name": m["name"],

@@ -19,13 +19,13 @@ jobs:
       - name: Install dependencies
         run: pip install yfinance pandas requests
 
-      - name: Compute rolling TSR (full universe)
-        run: python scripts/rolling_tsr.py
-
       - name: Compute rolling TSR (basket)
         run: >
           python scripts/rolling_tsr.py universe/basket_universe.csv
           data/basket_tsr.json data/basket_monthly_adj_close.csv
+
+      - name: Compute rolling TSR (full universe)
+        run: python scripts/rolling_tsr.py
 
       - name: Commit results
         run: |
