@@ -6,127 +6,148 @@
    "name": "Caterpillar",
    "short": "Caterpillar",
    "group": "Heavy Industrial",
-   "mkt_cap": 363572957208.96185
+   "mkt_cap": 366576920263.79224,
+   "caps": {}
   },
   "DE": {
    "name": "Deere & Co",
    "short": "Deere",
    "group": "Heavy Industrial",
-   "mkt_cap": 175081254699.54834
+   "mkt_cap": 176580371332.00317,
+   "caps": {}
   },
   "CMI": {
    "name": "Cummins",
    "short": "Cummins",
    "group": "Heavy Industrial",
-   "mkt_cap": 77563611907.5003
+   "mkt_cap": 77697839823.74939,
+   "caps": {}
   },
   "PCAR": {
    "name": "PACCAR",
    "short": "PACCAR",
    "group": "Heavy Industrial",
-   "mkt_cap": 65258728639.91219
+   "mkt_cap": 65337680170.18548,
+   "caps": {}
   },
   "URI": {
    "name": "United Rentals",
    "short": "United Rentals",
    "group": "Heavy Industrial",
-   "mkt_cap": 63739112383.27063
+   "mkt_cap": 64607703582.0,
+   "caps": {}
   },
   "DAL": {
    "name": "Delta Air Lines",
    "short": "Delta",
    "group": "Airline",
-   "mkt_cap": 51274868451.86249
+   "mkt_cap": 51294596340.0,
+   "caps": {}
   },
   "UAL": {
    "name": "United Airlines",
    "short": "United",
    "group": "Airline",
-   "mkt_cap": 34943178105.08984
+   "mkt_cap": 35050284233.36426,
+   "caps": {}
   },
   "LUV": {
    "name": "Southwest Airlines",
    "short": "Southwest",
    "group": "Airline",
-   "mkt_cap": 19000846601.487247
+   "mkt_cap": 18849191387.35202,
+   "caps": {}
   },
   "AAL": {
    "name": "American Airlines",
    "short": "American",
    "group": "Airline",
-   "mkt_cap": 8850538169.113552
+   "mkt_cap": 8890256643.947197,
+   "caps": {}
   },
   "UNP": {
    "name": "Union Pacific",
    "short": "Union Pacific",
    "group": "Rail",
-   "mkt_cap": 179921696622.0022
+   "mkt_cap": 178620687960.748,
+   "caps": {}
   },
   "BHP": {
    "name": "BHP Group",
    "short": "BHP",
    "group": "Mining",
-   "mkt_cap": 239864582936.00522
+   "mkt_cap": 238695505888.3368,
+   "caps": {}
   },
   "RIO": {
    "name": "Rio Tinto",
    "short": "Rio Tinto",
    "group": "Mining",
-   "mkt_cap": 167417427327.3437
+   "mkt_cap": 166701825277.5,
+   "caps": {}
   },
   "VALE": {
    "name": "Vale",
    "short": "Vale",
    "group": "Mining",
-   "mkt_cap": 64581201407.947334
+   "mkt_cap": 64219461407.00787,
+   "caps": {}
   },
   "FCX": {
    "name": "Freeport-McMoRan",
    "short": "Freeport",
    "group": "Mining",
-   "mkt_cap": 108103397378.48892
+   "mkt_cap": 108763964124.35562,
+   "caps": {}
   },
   "NEM": {
    "name": "Newmont",
    "short": "Newmont",
    "group": "Mining",
-   "mkt_cap": 132190965787.67317
+   "mkt_cap": 132828445109.7691,
+   "caps": {}
   },
   "SCCO": {
    "name": "Southern Copper",
    "short": "Southern Copper",
    "group": "Mining",
-   "mkt_cap": 173673054834.72595
+   "mkt_cap": 176358061572.0481,
+   "caps": {}
   },
   "XOM": {
    "name": "ExxonMobil",
    "short": "ExxonMobil",
    "group": "Oil Major",
-   "mkt_cap": 657988169407.1832
+   "mkt_cap": 661812217413.4406,
+   "caps": {}
   },
   "CVX": {
    "name": "Chevron",
    "short": "Chevron",
    "group": "Oil Major",
-   "mkt_cap": 404512011964.30426
+   "mkt_cap": 404364897705.0924,
+   "caps": {}
   },
   "SHEL": {
    "name": "Shell",
    "short": "Shell",
    "group": "Oil Major",
-   "mkt_cap": 252399700157.68774
+   "mkt_cap": 251711587538.93774,
+   "caps": {}
   },
   "TTE": {
    "name": "TotalEnergies",
    "short": "TotalEnergies",
    "group": "Oil Major",
-   "mkt_cap": 194924950606.3552
+   "mkt_cap": 195400666026.7896,
+   "caps": {}
   },
   "BP": {
    "name": "BP",
    "short": "BP",
    "group": "Oil Major",
-   "mkt_cap": 109928489099.97443
+   "mkt_cap": 110404921135.79767,
+   "caps": {}
   }
  },
  "note": "10-year TSR = change in dividend- and split-adjusted price (dividends reinvested) between year-end Y-10 and year-end Y. Source: Yahoo Finance monthly adjusted closes.",
@@ -599,7 +620,7 @@
     "name": "Chevron",
     "group": "Oil Major",
     "rank": 5,
-    "tsr_cum": 1.9625,
+    "tsr_cum": 1.9624,
     "tsr_ann": 0.1147
    },
    {
@@ -1351,7 +1372,7 @@
     "name": "Freeport-McMoRan",
     "group": "Mining",
     "rank": 20,
-    "tsr_cum": 0.0746,
+    "tsr_cum": 0.0745,
     "tsr_ann": 0.0072
    },
    {
@@ -2493,7 +2514,7 @@
     "name": "Shell",
     "group": "Oil Major",
     "rank": 14,
-    "tsr_cum": 1.6391,
+    "tsr_cum": 1.6392,
     "tsr_ann": 0.1019
    },
    {
@@ -2553,5 +2574,4975 @@
     "tsr_ann": -0.0925
    }
   ]
+ },
+ "windows": {
+  "10": {
+   "2011": [
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 1,
+     "tsr_cum": 27.2252,
+     "tsr_ann": 0.3966
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 2,
+     "tsr_cum": 9.9042,
+     "tsr_ann": 0.2699
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 3,
+     "tsr_cum": 9.1265,
+     "tsr_ann": 0.2605
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 4,
+     "tsr_cum": 6.1604,
+     "tsr_ann": 0.2176
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 5,
+     "tsr_cum": 3.4102,
+     "tsr_ann": 0.16
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 6,
+     "tsr_cum": 3.4003,
+     "tsr_ann": 0.1597
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 7,
+     "tsr_cum": 3.2839,
+     "tsr_ann": 0.1566
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 2.904,
+     "tsr_ann": 0.1459
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 9,
+     "tsr_cum": 2.7967,
+     "tsr_ann": 0.1427
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 10,
+     "tsr_cum": 2.4232,
+     "tsr_ann": 0.131
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 11,
+     "tsr_cum": 2.321,
+     "tsr_ann": 0.1275
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 12,
+     "tsr_cum": 1.6999,
+     "tsr_ann": 0.1044
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 1.3551,
+     "tsr_ann": 0.0894
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 1.2949,
+     "tsr_ann": 0.0866
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 15,
+     "tsr_cum": 0.351,
+     "tsr_ann": 0.0305
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 16,
+     "tsr_cum": 0.3018,
+     "tsr_ann": 0.0267
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 17,
+     "tsr_cum": -0.5294,
+     "tsr_ann": -0.0726
+    }
+   ],
+   "2012": [
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 1,
+     "tsr_cum": 30.8191,
+     "tsr_ann": 0.4134
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 2,
+     "tsr_cum": 17.0766,
+     "tsr_ann": 0.3357
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 3,
+     "tsr_cum": 11.2343,
+     "tsr_ann": 0.2846
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 4,
+     "tsr_cum": 7.5055,
+     "tsr_ann": 0.2387
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 5,
+     "tsr_cum": 4.4847,
+     "tsr_ann": 0.1855
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 6,
+     "tsr_cum": 4.0093,
+     "tsr_ann": 0.1748
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 7,
+     "tsr_cum": 3.9652,
+     "tsr_ann": 0.1738
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 3.5727,
+     "tsr_ann": 0.1642
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 9,
+     "tsr_cum": 3.5367,
+     "tsr_ann": 0.1633
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 10,
+     "tsr_cum": 3.4791,
+     "tsr_ann": 0.1618
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 11,
+     "tsr_cum": 3.4189,
+     "tsr_ann": 0.1602
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 12,
+     "tsr_cum": 3.2305,
+     "tsr_ann": 0.1552
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 2.1021,
+     "tsr_ann": 0.1199
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 1.5156,
+     "tsr_ann": 0.0966
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 15,
+     "tsr_cum": 1.3827,
+     "tsr_ann": 0.0907
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 16,
+     "tsr_cum": 0.785,
+     "tsr_ann": 0.0597
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 17,
+     "tsr_cum": 0.5242,
+     "tsr_ann": 0.043
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 18,
+     "tsr_cum": -0.2496,
+     "tsr_ann": -0.0283
+    }
+   ],
+   "2013": [
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 12.4153,
+     "tsr_ann": 0.2965
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 2,
+     "tsr_cum": 6.3338,
+     "tsr_ann": 0.2205
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 3,
+     "tsr_cum": 4.7867,
+     "tsr_ann": 0.1919
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 4,
+     "tsr_cum": 3.7099,
+     "tsr_ann": 0.1676
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 5,
+     "tsr_cum": 3.4221,
+     "tsr_ann": 0.1603
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 6,
+     "tsr_cum": 3.0472,
+     "tsr_ann": 0.15
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 7,
+     "tsr_cum": 2.9985,
+     "tsr_ann": 0.1487
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 2.4263,
+     "tsr_ann": 0.1311
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 9,
+     "tsr_cum": 2.1849,
+     "tsr_ann": 0.1228
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 10,
+     "tsr_cum": 2.0886,
+     "tsr_ann": 0.1194
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 11,
+     "tsr_cum": 2.0563,
+     "tsr_ann": 0.1182
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 12,
+     "tsr_cum": 1.7586,
+     "tsr_ann": 0.1068
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 13,
+     "tsr_cum": 1.5917,
+     "tsr_ann": 0.0999
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 1.2311,
+     "tsr_ann": 0.0836
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 15,
+     "tsr_cum": 1.2035,
+     "tsr_ann": 0.0822
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": 0.4802,
+     "tsr_ann": 0.04
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 17,
+     "tsr_cum": 0.1978,
+     "tsr_ann": 0.0182
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 18,
+     "tsr_cum": -0.4538,
+     "tsr_ann": -0.0587
+    }
+   ],
+   "2014": [
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 1,
+     "tsr_cum": 7.4663,
+     "tsr_ann": 0.2381
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 2,
+     "tsr_cum": 7.0108,
+     "tsr_ann": 0.2313
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 3,
+     "tsr_cum": 5.8536,
+     "tsr_ann": 0.2122
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 4,
+     "tsr_cum": 4.3974,
+     "tsr_ann": 0.1836
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 5,
+     "tsr_cum": 1.9624,
+     "tsr_ann": 0.1147
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 6,
+     "tsr_cum": 1.9307,
+     "tsr_ann": 0.1135
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 7,
+     "tsr_cum": 1.6837,
+     "tsr_ann": 0.1038
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 1.5577,
+     "tsr_ann": 0.0985
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 9,
+     "tsr_cum": 1.5259,
+     "tsr_ann": 0.0971
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 10,
+     "tsr_cum": 1.384,
+     "tsr_ann": 0.0908
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 11,
+     "tsr_cum": 1.3537,
+     "tsr_ann": 0.0894
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 12,
+     "tsr_cum": 1.2658,
+     "tsr_ann": 0.0852
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.9028,
+     "tsr_ann": 0.0664
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 14,
+     "tsr_cum": 0.7816,
+     "tsr_ann": 0.0595
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 15,
+     "tsr_cum": 0.6023,
+     "tsr_ann": 0.0483
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": 0.5763,
+     "tsr_ann": 0.0466
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 17,
+     "tsr_cum": -0.0013,
+     "tsr_ann": -0.0001
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 18,
+     "tsr_cum": -0.508,
+     "tsr_ann": -0.0685
+    }
+   ],
+   "2015": [
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 1,
+     "tsr_cum": 3.6671,
+     "tsr_ann": 0.1666
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 2,
+     "tsr_cum": 3.6273,
+     "tsr_ann": 0.1656
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 3,
+     "tsr_cum": 3.0328,
+     "tsr_ann": 0.1496
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 4,
+     "tsr_cum": 2.1013,
+     "tsr_ann": 0.1198
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 5,
+     "tsr_cum": 1.7846,
+     "tsr_ann": 0.1078
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 6,
+     "tsr_cum": 1.7203,
+     "tsr_ann": 0.1053
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 7,
+     "tsr_cum": 1.2264,
+     "tsr_ann": 0.0833
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 1.0816,
+     "tsr_ann": 0.0761
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 9,
+     "tsr_cum": 0.7676,
+     "tsr_ann": 0.0586
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 10,
+     "tsr_cum": 0.5217,
+     "tsr_ann": 0.0429
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 11,
+     "tsr_cum": 0.2338,
+     "tsr_ann": 0.0212
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 12,
+     "tsr_cum": 0.2302,
+     "tsr_ann": 0.0209
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 13,
+     "tsr_cum": 0.1559,
+     "tsr_ann": 0.0146
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 14,
+     "tsr_cum": 0.0998,
+     "tsr_ann": 0.0096
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 15,
+     "tsr_cum": -0.0018,
+     "tsr_ann": -0.0002
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": -0.2332,
+     "tsr_ann": -0.0262
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 17,
+     "tsr_cum": -0.5371,
+     "tsr_ann": -0.0741
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 18,
+     "tsr_cum": -0.6123,
+     "tsr_ann": -0.0904
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 19,
+     "tsr_cum": -0.6433,
+     "tsr_ann": -0.0979
+    }
+   ],
+   "2016": [
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 4.58,
+     "tsr_ann": 0.1876
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 2,
+     "tsr_cum": 4.4773,
+     "tsr_ann": 0.1854
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 3,
+     "tsr_cum": 3.1518,
+     "tsr_ann": 0.153
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 4,
+     "tsr_cum": 2.4033,
+     "tsr_ann": 0.1303
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 5,
+     "tsr_cum": 1.7763,
+     "tsr_ann": 0.1075
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 6,
+     "tsr_cum": 1.7191,
+     "tsr_ann": 0.1052
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 7,
+     "tsr_cum": 1.2757,
+     "tsr_ann": 0.0857
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 1.0048,
+     "tsr_ann": 0.072
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 9,
+     "tsr_cum": 0.9605,
+     "tsr_ann": 0.0696
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 10,
+     "tsr_cum": 0.7712,
+     "tsr_ann": 0.0588
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 11,
+     "tsr_cum": 0.5236,
+     "tsr_ann": 0.043
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 12,
+     "tsr_cum": 0.3221,
+     "tsr_ann": 0.0283
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 13,
+     "tsr_cum": 0.2879,
+     "tsr_ann": 0.0256
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 0.2215,
+     "tsr_ann": 0.0202
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 15,
+     "tsr_cum": 0.16,
+     "tsr_ann": 0.015
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": -0.0841,
+     "tsr_ann": -0.0087
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 17,
+     "tsr_cum": -0.1113,
+     "tsr_ann": -0.0117
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 18,
+     "tsr_cum": -0.1351,
+     "tsr_ann": -0.0144
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 19,
+     "tsr_cum": -0.2704,
+     "tsr_ann": -0.031
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 20,
+     "tsr_cum": -0.377,
+     "tsr_ann": -0.0462
+    }
+   ],
+   "2017": [
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 8.3633,
+     "tsr_ann": 0.2507
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 2,
+     "tsr_cum": 4.6505,
+     "tsr_ann": 0.1891
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 3,
+     "tsr_cum": 4.2387,
+     "tsr_ann": 0.1801
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 4,
+     "tsr_cum": 2.9938,
+     "tsr_ann": 0.1485
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 5,
+     "tsr_cum": 2.6568,
+     "tsr_ann": 0.1384
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 6,
+     "tsr_cum": 2.4054,
+     "tsr_ann": 0.1304
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 7,
+     "tsr_cum": 1.9125,
+     "tsr_ann": 0.1128
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 1.1193,
+     "tsr_ann": 0.078
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 9,
+     "tsr_cum": 1.0212,
+     "tsr_ann": 0.0729
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 10,
+     "tsr_cum": 0.993,
+     "tsr_ann": 0.0714
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 11,
+     "tsr_cum": 0.9277,
+     "tsr_ann": 0.0678
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 12,
+     "tsr_cum": 0.7339,
+     "tsr_ann": 0.0566
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.4031,
+     "tsr_ann": 0.0345
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 0.1792,
+     "tsr_ann": 0.0166
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 15,
+     "tsr_cum": 0.1749,
+     "tsr_ann": 0.0162
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": -0.0279,
+     "tsr_ann": -0.0028
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 17,
+     "tsr_cum": -0.0384,
+     "tsr_ann": -0.0039
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 18,
+     "tsr_cum": -0.1211,
+     "tsr_ann": -0.0128
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 19,
+     "tsr_cum": -0.1665,
+     "tsr_ann": -0.018
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 20,
+     "tsr_cum": -0.4504,
+     "tsr_ann": -0.0581
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 21,
+     "tsr_cum": -0.5208,
+     "tsr_ann": -0.0709
+    }
+   ],
+   "2018": [
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 10.2423,
+     "tsr_ann": 0.2738
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 2,
+     "tsr_cum": 6.598,
+     "tsr_ann": 0.2248
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 3,
+     "tsr_cum": 6.1367,
+     "tsr_ann": 0.2172
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 4,
+     "tsr_cum": 5.2282,
+     "tsr_ann": 0.2007
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 5,
+     "tsr_cum": 4.7315,
+     "tsr_ann": 0.1908
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 6,
+     "tsr_cum": 3.9065,
+     "tsr_ann": 0.1724
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 7,
+     "tsr_cum": 3.7397,
+     "tsr_ann": 0.1684
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 8,
+     "tsr_cum": 3.3361,
+     "tsr_ann": 0.158
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 9,
+     "tsr_cum": 2.7995,
+     "tsr_ann": 0.1428
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 10,
+     "tsr_cum": 2.7627,
+     "tsr_ann": 0.1417
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 11,
+     "tsr_cum": 1.737,
+     "tsr_ann": 0.1059
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 12,
+     "tsr_cum": 1.6932,
+     "tsr_ann": 0.1041
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 1.1303,
+     "tsr_ann": 0.0786
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 0.9719,
+     "tsr_ann": 0.0703
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 15,
+     "tsr_cum": 0.7001,
+     "tsr_ann": 0.0545
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": 0.6608,
+     "tsr_ann": 0.052
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 17,
+     "tsr_cum": 0.6162,
+     "tsr_ann": 0.0492
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 18,
+     "tsr_cum": 0.374,
+     "tsr_ann": 0.0323
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 19,
+     "tsr_cum": 0.1523,
+     "tsr_ann": 0.0143
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 20,
+     "tsr_cum": 0.0745,
+     "tsr_ann": 0.0072
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 21,
+     "tsr_cum": -0.0198,
+     "tsr_ann": -0.002
+    }
+   ],
+   "2019": [
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 16.0,
+     "tsr_ann": 0.3275
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 2,
+     "tsr_cum": 5.9884,
+     "tsr_ann": 0.2146
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 3,
+     "tsr_cum": 5.8234,
+     "tsr_ann": 0.2117
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 4,
+     "tsr_cum": 5.2624,
+     "tsr_ann": 0.2014
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 5,
+     "tsr_cum": 4.7457,
+     "tsr_ann": 0.1911
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 6,
+     "tsr_cum": 4.0752,
+     "tsr_ann": 0.1764
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 7,
+     "tsr_cum": 3.9078,
+     "tsr_ann": 0.1724
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 3.0068,
+     "tsr_ann": 0.1489
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 9,
+     "tsr_cum": 2.4086,
+     "tsr_ann": 0.1305
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 10,
+     "tsr_cum": 2.0779,
+     "tsr_ann": 0.119
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 11,
+     "tsr_cum": 1.2725,
+     "tsr_ann": 0.0856
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 12,
+     "tsr_cum": 0.8884,
+     "tsr_ann": 0.0656
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 13,
+     "tsr_cum": 0.7583,
+     "tsr_ann": 0.0581
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 0.7558,
+     "tsr_ann": 0.0579
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 15,
+     "tsr_cum": 0.4981,
+     "tsr_ann": 0.0413
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": 0.4138,
+     "tsr_ann": 0.0352
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 17,
+     "tsr_cum": 0.1457,
+     "tsr_ann": 0.0137
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 18,
+     "tsr_cum": 0.0946,
+     "tsr_ann": 0.0091
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 19,
+     "tsr_cum": 0.091,
+     "tsr_ann": 0.0087
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 20,
+     "tsr_cum": -0.3238,
+     "tsr_ann": -0.0384
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 21,
+     "tsr_cum": -0.5761,
+     "tsr_ann": -0.0823
+    }
+   ],
+   "2020": [
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 9.1938,
+     "tsr_ann": 0.2613
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 2,
+     "tsr_cum": 4.57,
+     "tsr_ann": 0.1874
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 3,
+     "tsr_cum": 3.0483,
+     "tsr_ann": 0.1501
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 4,
+     "tsr_cum": 2.8674,
+     "tsr_ann": 0.1448
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 5,
+     "tsr_cum": 2.5928,
+     "tsr_ann": 0.1364
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 6,
+     "tsr_cum": 1.6391,
+     "tsr_ann": 0.1019
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 7,
+     "tsr_cum": 1.568,
+     "tsr_ann": 0.0989
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 1.1447,
+     "tsr_ann": 0.0793
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 9,
+     "tsr_cum": 0.9232,
+     "tsr_ann": 0.0676
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 10,
+     "tsr_cum": 0.8157,
+     "tsr_ann": 0.0615
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 11,
+     "tsr_cum": 0.7694,
+     "tsr_ann": 0.0587
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 12,
+     "tsr_cum": 0.6711,
+     "tsr_ann": 0.0527
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.4075,
+     "tsr_ann": 0.0348
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 0.3687,
+     "tsr_ann": 0.0319
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 15,
+     "tsr_cum": 0.1686,
+     "tsr_ann": 0.0157
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 16,
+     "tsr_cum": 0.1555,
+     "tsr_ann": 0.0146
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 17,
+     "tsr_cum": -0.0655,
+     "tsr_ann": -0.0067
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 18,
+     "tsr_cum": -0.1695,
+     "tsr_ann": -0.0184
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 19,
+     "tsr_cum": -0.1811,
+     "tsr_ann": -0.0198
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 20,
+     "tsr_cum": -0.2609,
+     "tsr_ann": -0.0298
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 21,
+     "tsr_cum": -0.4473,
+     "tsr_ann": -0.0576
+    }
+   ],
+   "2021": [
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 10.245,
+     "tsr_ann": 0.2738
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 2,
+     "tsr_cum": 4.8862,
+     "tsr_ann": 0.1939
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 3,
+     "tsr_cum": 4.4901,
+     "tsr_ann": 0.1857
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 4,
+     "tsr_cum": 4.4384,
+     "tsr_ann": 0.1845
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 5,
+     "tsr_cum": 4.3789,
+     "tsr_ann": 0.1832
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 6,
+     "tsr_cum": 2.7576,
+     "tsr_ann": 0.1415
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 7,
+     "tsr_cum": 2.3551,
+     "tsr_ann": 0.1287
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 2.2003,
+     "tsr_ann": 0.1234
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 9,
+     "tsr_cum": 2.0216,
+     "tsr_ann": 0.1169
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 10,
+     "tsr_cum": 1.8783,
+     "tsr_ann": 0.1115
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 11,
+     "tsr_cum": 1.5351,
+     "tsr_ann": 0.0975
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 12,
+     "tsr_cum": 1.3201,
+     "tsr_ann": 0.0878
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.7434,
+     "tsr_ann": 0.0572
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 0.6641,
+     "tsr_ann": 0.0522
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 15,
+     "tsr_cum": 0.4983,
+     "tsr_ann": 0.0413
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 16,
+     "tsr_cum": 0.4127,
+     "tsr_ann": 0.0352
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 17,
+     "tsr_cum": 0.2635,
+     "tsr_ann": 0.0237
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 18,
+     "tsr_cum": 0.1269,
+     "tsr_ann": 0.012
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 19,
+     "tsr_cum": 0.1036,
+     "tsr_ann": 0.0099
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 20,
+     "tsr_cum": 0.0874,
+     "tsr_ann": 0.0084
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 21,
+     "tsr_cum": 0.0457,
+     "tsr_ann": 0.0045
+    }
+   ],
+   "2022": [
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 6.808,
+     "tsr_ann": 0.2282
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 2,
+     "tsr_cum": 5.0811,
+     "tsr_ann": 0.1978
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 3,
+     "tsr_cum": 3.0821,
+     "tsr_ann": 0.151
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 4,
+     "tsr_cum": 2.5273,
+     "tsr_ann": 0.1343
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 5,
+     "tsr_cum": 2.5204,
+     "tsr_ann": 0.1341
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 6,
+     "tsr_cum": 2.1361,
+     "tsr_ann": 0.1211
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 7,
+     "tsr_cum": 2.1166,
+     "tsr_ann": 0.1204
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 1.9158,
+     "tsr_ann": 0.1129
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 9,
+     "tsr_cum": 1.5099,
+     "tsr_ann": 0.0964
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 10,
+     "tsr_cum": 1.4544,
+     "tsr_ann": 0.0939
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 11,
+     "tsr_cum": 1.1728,
+     "tsr_ann": 0.0807
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 12,
+     "tsr_cum": 1.1572,
+     "tsr_ann": 0.0799
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.9464,
+     "tsr_ann": 0.0689
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 14,
+     "tsr_cum": 0.6828,
+     "tsr_ann": 0.0534
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 15,
+     "tsr_cum": 0.6125,
+     "tsr_ann": 0.0489
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": 0.5131,
+     "tsr_ann": 0.0423
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 17,
+     "tsr_cum": 0.4226,
+     "tsr_ann": 0.0359
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 18,
+     "tsr_cum": 0.4144,
+     "tsr_ann": 0.0353
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 19,
+     "tsr_cum": 0.3636,
+     "tsr_ann": 0.0315
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 20,
+     "tsr_cum": 0.2581,
+     "tsr_ann": 0.0232
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 21,
+     "tsr_cum": -0.0006,
+     "tsr_ann": -0.0001
+    }
+   ],
+   "2023": [
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 6.4603,
+     "tsr_ann": 0.2226
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 2,
+     "tsr_cum": 4.3112,
+     "tsr_ann": 0.1817
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 3,
+     "tsr_cum": 3.2956,
+     "tsr_ann": 0.1569
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 4,
+     "tsr_cum": 3.1823,
+     "tsr_ann": 0.1538
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 5,
+     "tsr_cum": 2.6428,
+     "tsr_ann": 0.138
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 6,
+     "tsr_cum": 2.602,
+     "tsr_ann": 0.1367
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 7,
+     "tsr_cum": 1.709,
+     "tsr_ann": 0.1048
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 1.2385,
+     "tsr_ann": 0.0839
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 9,
+     "tsr_cum": 1.2295,
+     "tsr_ann": 0.0835
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 10,
+     "tsr_cum": 1.1796,
+     "tsr_ann": 0.081
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 11,
+     "tsr_cum": 0.9856,
+     "tsr_ann": 0.071
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 12,
+     "tsr_cum": 0.8722,
+     "tsr_ann": 0.0647
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.8169,
+     "tsr_ann": 0.0615
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 14,
+     "tsr_cum": 0.6726,
+     "tsr_ann": 0.0528
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 15,
+     "tsr_cum": 0.6484,
+     "tsr_ann": 0.0513
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": 0.5682,
+     "tsr_ann": 0.046
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 17,
+     "tsr_cum": 0.5189,
+     "tsr_ann": 0.0427
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 18,
+     "tsr_cum": 0.3068,
+     "tsr_ann": 0.0271
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 19,
+     "tsr_cum": 0.2924,
+     "tsr_ann": 0.026
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 20,
+     "tsr_cum": 0.0907,
+     "tsr_ann": 0.0087
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 21,
+     "tsr_cum": -0.4228,
+     "tsr_ann": -0.0535
+    }
+   ],
+   "2024": [
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 6.0669,
+     "tsr_ann": 0.216
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 2,
+     "tsr_cum": 4.7438,
+     "tsr_ann": 0.191
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 3,
+     "tsr_cum": 4.175,
+     "tsr_ann": 0.1787
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 4,
+     "tsr_cum": 3.5902,
+     "tsr_ann": 0.1646
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 5,
+     "tsr_cum": 2.3744,
+     "tsr_ann": 0.1293
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 6,
+     "tsr_cum": 2.1969,
+     "tsr_ann": 0.1232
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 7,
+     "tsr_cum": 1.71,
+     "tsr_ann": 0.1048
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 8,
+     "tsr_cum": 1.48,
+     "tsr_ann": 0.0951
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 9,
+     "tsr_cum": 1.3931,
+     "tsr_ann": 0.0912
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 10,
+     "tsr_cum": 1.2844,
+     "tsr_ann": 0.0861
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 11,
+     "tsr_cum": 1.0492,
+     "tsr_ann": 0.0744
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 12,
+     "tsr_cum": 0.9786,
+     "tsr_ann": 0.0706
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.9256,
+     "tsr_ann": 0.0677
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 14,
+     "tsr_cum": 0.824,
+     "tsr_ann": 0.0619
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 15,
+     "tsr_cum": 0.7989,
+     "tsr_ann": 0.0605
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": 0.5744,
+     "tsr_ann": 0.0464
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 17,
+     "tsr_cum": 0.4516,
+     "tsr_ann": 0.038
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 18,
+     "tsr_cum": 0.3976,
+     "tsr_ann": 0.034
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 19,
+     "tsr_cum": 0.3879,
+     "tsr_ann": 0.0333
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 20,
+     "tsr_cum": -0.1196,
+     "tsr_ann": -0.0127
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 21,
+     "tsr_cum": -0.657,
+     "tsr_ann": -0.1015
+    }
+   ],
+   "2025": [
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 10.5197,
+     "tsr_ann": 0.2769
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 2,
+     "tsr_cum": 9.7699,
+     "tsr_ann": 0.2683
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 3,
+     "tsr_cum": 7.2709,
+     "tsr_ann": 0.2353
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 4,
+     "tsr_cum": 7.1608,
+     "tsr_ann": 0.2336
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 5,
+     "tsr_cum": 7.0446,
+     "tsr_ann": 0.2318
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 6,
+     "tsr_cum": 6.5993,
+     "tsr_ann": 0.2248
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 7,
+     "tsr_cum": 6.2096,
+     "tsr_ann": 0.2184
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 8,
+     "tsr_cum": 6.073,
+     "tsr_ann": 0.2161
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 9,
+     "tsr_cum": 4.8777,
+     "tsr_ann": 0.1938
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 10,
+     "tsr_cum": 4.0009,
+     "tsr_ann": 0.1746
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 11,
+     "tsr_cum": 3.713,
+     "tsr_ann": 0.1677
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 12,
+     "tsr_cum": 2.7006,
+     "tsr_ann": 0.1398
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 1.6401,
+     "tsr_ann": 0.102
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 1.6392,
+     "tsr_ann": 0.1019
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 15,
+     "tsr_cum": 1.5988,
+     "tsr_ann": 0.1002
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": 1.3924,
+     "tsr_ann": 0.0911
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 17,
+     "tsr_cum": 0.996,
+     "tsr_ann": 0.0716
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 18,
+     "tsr_cum": 0.9515,
+     "tsr_ann": 0.0691
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 19,
+     "tsr_cum": 0.5485,
+     "tsr_ann": 0.0447
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 20,
+     "tsr_cum": 0.0796,
+     "tsr_ann": 0.0077
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 21,
+     "tsr_cum": -0.6212,
+     "tsr_ann": -0.0925
+    }
+   ]
+  },
+  "5": {
+   "2011": [
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 2.1948,
+     "tsr_ann": 0.2615
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 2,
+     "tsr_cum": 1.5133,
+     "tsr_ann": 0.2024
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 3,
+     "tsr_cum": 1.2452,
+     "tsr_ann": 0.1756
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 4,
+     "tsr_cum": 1.0037,
+     "tsr_ann": 0.1491
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 5,
+     "tsr_cum": 0.7929,
+     "tsr_ann": 0.1239
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 6,
+     "tsr_cum": 0.7038,
+     "tsr_ann": 0.1125
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 7,
+     "tsr_cum": 0.6846,
+     "tsr_ann": 0.1099
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 8,
+     "tsr_cum": 0.6676,
+     "tsr_ann": 0.1077
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 9,
+     "tsr_cum": 0.4489,
+     "tsr_ann": 0.077
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 10,
+     "tsr_cum": 0.4011,
+     "tsr_ann": 0.0698
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 11,
+     "tsr_cum": 0.3259,
+     "tsr_ann": 0.058
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 12,
+     "tsr_cum": 0.2335,
+     "tsr_ann": 0.0429
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 13,
+     "tsr_cum": 0.2005,
+     "tsr_ann": 0.0372
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 14,
+     "tsr_cum": 0.162,
+     "tsr_ann": 0.0305
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 15,
+     "tsr_cum": -0.0273,
+     "tsr_ann": -0.0055
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": -0.0778,
+     "tsr_ann": -0.0161
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 17,
+     "tsr_cum": -0.2111,
+     "tsr_ann": -0.0463
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 18,
+     "tsr_cum": -0.436,
+     "tsr_ann": -0.1082
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 19,
+     "tsr_cum": -0.5414,
+     "tsr_ann": -0.1444
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 20,
+     "tsr_cum": -0.9058,
+     "tsr_ann": -0.3766
+    }
+   ],
+   "2012": [
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 1.4793,
+     "tsr_ann": 0.1991
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 2,
+     "tsr_cum": 1.2025,
+     "tsr_ann": 0.1711
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 3,
+     "tsr_cum": 0.8393,
+     "tsr_ann": 0.1296
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 4,
+     "tsr_cum": 0.486,
+     "tsr_ann": 0.0824
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 5,
+     "tsr_cum": 0.4205,
+     "tsr_ann": 0.0727
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 6,
+     "tsr_cum": 0.3712,
+     "tsr_ann": 0.0652
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 7,
+     "tsr_cum": 0.2807,
+     "tsr_ann": 0.0507
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 8,
+     "tsr_cum": 0.0642,
+     "tsr_ann": 0.0125
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 9,
+     "tsr_cum": 0.0391,
+     "tsr_ann": 0.0077
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 10,
+     "tsr_cum": 0.0315,
+     "tsr_ann": 0.0062
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 11,
+     "tsr_cum": 0.0215,
+     "tsr_ann": 0.0043
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 12,
+     "tsr_cum": -0.0623,
+     "tsr_ann": -0.0128
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 13,
+     "tsr_cum": -0.0823,
+     "tsr_ann": -0.017
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 14,
+     "tsr_cum": -0.1507,
+     "tsr_ann": -0.0321
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 15,
+     "tsr_cum": -0.1626,
+     "tsr_ann": -0.0349
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 16,
+     "tsr_cum": -0.2028,
+     "tsr_ann": -0.0443
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 17,
+     "tsr_cum": -0.225,
+     "tsr_ann": -0.0497
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 18,
+     "tsr_cum": -0.2558,
+     "tsr_ann": -0.0574
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 19,
+     "tsr_cum": -0.2713,
+     "tsr_ann": -0.0613
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 20,
+     "tsr_cum": -0.2885,
+     "tsr_ann": -0.0658
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 21,
+     "tsr_cum": -0.2989,
+     "tsr_ann": -0.0686
+    }
+   ],
+   "2013": [
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 7.5471,
+     "tsr_ann": 0.5359
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 2,
+     "tsr_cum": 4.7189,
+     "tsr_ann": 0.4173
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 3,
+     "tsr_cum": 2.8844,
+     "tsr_ann": 0.3118
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 4,
+     "tsr_cum": 2.6465,
+     "tsr_ann": 0.2953
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 5,
+     "tsr_cum": 2.4328,
+     "tsr_ann": 0.2798
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 6,
+     "tsr_cum": 2.4099,
+     "tsr_ann": 0.2781
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 7,
+     "tsr_cum": 2.2665,
+     "tsr_ann": 0.2671
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 1.6614,
+     "tsr_ann": 0.2163
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 9,
+     "tsr_cum": 1.4093,
+     "tsr_ann": 0.1923
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 10,
+     "tsr_cum": 1.3592,
+     "tsr_ann": 0.1873
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 11,
+     "tsr_cum": 1.3247,
+     "tsr_ann": 0.1838
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 12,
+     "tsr_cum": 1.3239,
+     "tsr_ann": 0.1837
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 13,
+     "tsr_cum": 1.2272,
+     "tsr_ann": 0.1737
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 1.0031,
+     "tsr_ann": 0.149
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 15,
+     "tsr_cum": 0.8423,
+     "tsr_ann": 0.13
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": 0.7632,
+     "tsr_ann": 0.1201
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 17,
+     "tsr_cum": 0.558,
+     "tsr_ann": 0.0927
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 18,
+     "tsr_cum": 0.4904,
+     "tsr_ann": 0.0831
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 19,
+     "tsr_cum": 0.4364,
+     "tsr_ann": 0.0751
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 20,
+     "tsr_cum": 0.2935,
+     "tsr_ann": 0.0528
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 21,
+     "tsr_cum": -0.375,
+     "tsr_ann": -0.0897
+    }
+   ],
+   "2014": [
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 1,
+     "tsr_cum": 10.1365,
+     "tsr_ann": 0.6194
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 2,
+     "tsr_cum": 9.3986,
+     "tsr_ann": 0.5973
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 3,
+     "tsr_cum": 4.1813,
+     "tsr_ann": 0.3896
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 4,
+     "tsr_cum": 3.3802,
+     "tsr_ann": 0.3437
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 5,
+     "tsr_cum": 3.1096,
+     "tsr_ann": 0.3267
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 6,
+     "tsr_cum": 2.7912,
+     "tsr_ann": 0.3054
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 7,
+     "tsr_cum": 2.4043,
+     "tsr_ann": 0.2776
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 1.1635,
+     "tsr_ann": 0.1669
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 9,
+     "tsr_cum": 0.8272,
+     "tsr_ann": 0.1281
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 10,
+     "tsr_cum": 0.8057,
+     "tsr_ann": 0.1255
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 11,
+     "tsr_cum": 0.7241,
+     "tsr_ann": 0.1151
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 12,
+     "tsr_cum": 0.5441,
+     "tsr_ann": 0.0908
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.4392,
+     "tsr_ann": 0.0755
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 14,
+     "tsr_cum": 0.109,
+     "tsr_ann": 0.0209
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 15,
+     "tsr_cum": 0.0718,
+     "tsr_ann": 0.014
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 16,
+     "tsr_cum": -0.0196,
+     "tsr_ann": -0.004
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 17,
+     "tsr_cum": -0.1973,
+     "tsr_ann": -0.043
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 18,
+     "tsr_cum": -0.2829,
+     "tsr_ann": -0.0644
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 19,
+     "tsr_cum": -0.2875,
+     "tsr_ann": -0.0656
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 20,
+     "tsr_cum": -0.5584,
+     "tsr_ann": -0.1508
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 21,
+     "tsr_cum": -0.6455,
+     "tsr_ann": -0.1873
+    }
+   ],
+   "2015": [
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 1,
+     "tsr_cum": 3.2887,
+     "tsr_ann": 0.338
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 2,
+     "tsr_cum": 3.1162,
+     "tsr_ann": 0.3271
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 3,
+     "tsr_cum": 2.4143,
+     "tsr_ann": 0.2784
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 4,
+     "tsr_cum": 2.1886,
+     "tsr_ann": 0.261
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 5,
+     "tsr_cum": 1.4055,
+     "tsr_ann": 0.1919
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 6,
+     "tsr_cum": 0.8702,
+     "tsr_ann": 0.1334
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 7,
+     "tsr_cum": 0.2227,
+     "tsr_ann": 0.041
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 8,
+     "tsr_cum": 0.1755,
+     "tsr_ann": 0.0329
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 9,
+     "tsr_cum": 0.1226,
+     "tsr_ann": 0.0234
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 10,
+     "tsr_cum": 0.0372,
+     "tsr_ann": 0.0073
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 11,
+     "tsr_cum": -0.0165,
+     "tsr_ann": -0.0033
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 12,
+     "tsr_cum": -0.0951,
+     "tsr_ann": -0.0198
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": -0.1077,
+     "tsr_ann": -0.0225
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 14,
+     "tsr_cum": -0.1186,
+     "tsr_ann": -0.0249
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 15,
+     "tsr_cum": -0.1747,
+     "tsr_ann": -0.0377
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 16,
+     "tsr_cum": -0.3334,
+     "tsr_ann": -0.0779
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 17,
+     "tsr_cum": -0.5176,
+     "tsr_ann": -0.1357
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 18,
+     "tsr_cum": -0.6474,
+     "tsr_ann": -0.1882
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 19,
+     "tsr_cum": -0.6774,
+     "tsr_ann": -0.2025
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 20,
+     "tsr_cum": -0.8606,
+     "tsr_ann": -0.3257
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 21,
+     "tsr_cum": -0.8761,
+     "tsr_ann": -0.3414
+    }
+   ],
+   "2016": [
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 1,
+     "tsr_cum": 8.4395,
+     "tsr_ann": 0.5667
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 2,
+     "tsr_cum": 5.3245,
+     "tsr_ann": 0.4461
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 3,
+     "tsr_cum": 5.0342,
+     "tsr_ann": 0.4326
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 4,
+     "tsr_cum": 2.8622,
+     "tsr_ann": 0.3103
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 5,
+     "tsr_cum": 2.5729,
+     "tsr_ann": 0.29
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 6,
+     "tsr_cum": 1.1793,
+     "tsr_ann": 0.1686
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 7,
+     "tsr_cum": 1.0156,
+     "tsr_ann": 0.1505
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 0.7466,
+     "tsr_ann": 0.118
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 9,
+     "tsr_cum": 0.5166,
+     "tsr_ann": 0.0869
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 10,
+     "tsr_cum": 0.3356,
+     "tsr_ann": 0.0596
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 11,
+     "tsr_cum": 0.3246,
+     "tsr_ann": 0.0578
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 12,
+     "tsr_cum": 0.2365,
+     "tsr_ann": 0.0434
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.2352,
+     "tsr_ann": 0.0432
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 14,
+     "tsr_cum": 0.1901,
+     "tsr_ann": 0.0354
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 15,
+     "tsr_cum": 0.1609,
+     "tsr_ann": 0.0303
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": -0.0028,
+     "tsr_ann": -0.0006
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 17,
+     "tsr_cum": -0.0337,
+     "tsr_ann": -0.0068
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 18,
+     "tsr_cum": -0.3572,
+     "tsr_ann": -0.0846
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 19,
+     "tsr_cum": -0.3827,
+     "tsr_ann": -0.092
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 20,
+     "tsr_cum": -0.5625,
+     "tsr_ann": -0.1524
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 21,
+     "tsr_cum": -0.57,
+     "tsr_ann": -0.1553
+    }
+   ],
+   "2017": [
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 1,
+     "tsr_cum": 5.6529,
+     "tsr_ann": 0.4608
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 2,
+     "tsr_cum": 4.0099,
+     "tsr_ann": 0.3803
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 3,
+     "tsr_cum": 2.9846,
+     "tsr_ann": 0.3185
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 4,
+     "tsr_cum": 2.7766,
+     "tsr_ann": 0.3044
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 5,
+     "tsr_cum": 1.8828,
+     "tsr_ann": 0.2358
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 6,
+     "tsr_cum": 1.3786,
+     "tsr_ann": 0.1892
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 7,
+     "tsr_cum": 1.0546,
+     "tsr_ann": 0.1549
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 1.0503,
+     "tsr_ann": 0.1544
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 9,
+     "tsr_cum": 0.8515,
+     "tsr_ann": 0.1311
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 10,
+     "tsr_cum": 0.849,
+     "tsr_ann": 0.1308
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 11,
+     "tsr_cum": 0.4059,
+     "tsr_ann": 0.0705
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 12,
+     "tsr_cum": 0.4031,
+     "tsr_ann": 0.0701
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.3662,
+     "tsr_ann": 0.0644
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 14,
+     "tsr_cum": 0.3412,
+     "tsr_ann": 0.0605
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 15,
+     "tsr_cum": 0.3185,
+     "tsr_ann": 0.0569
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 16,
+     "tsr_cum": 0.1438,
+     "tsr_ann": 0.0272
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 17,
+     "tsr_cum": 0.1348,
+     "tsr_ann": 0.0256
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 18,
+     "tsr_cum": -0.1396,
+     "tsr_ann": -0.0296
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 19,
+     "tsr_cum": -0.2492,
+     "tsr_ann": -0.0557
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 20,
+     "tsr_cum": -0.2908,
+     "tsr_ann": -0.0664
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 21,
+     "tsr_cum": -0.3561,
+     "tsr_ann": -0.0843
+    }
+   ],
+   "2018": [
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 1,
+     "tsr_cum": 1.5734,
+     "tsr_ann": 0.2081
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 2,
+     "tsr_cum": 1.2133,
+     "tsr_ann": 0.1722
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 3,
+     "tsr_cum": 0.9672,
+     "tsr_ann": 0.1449
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 4,
+     "tsr_cum": 0.8435,
+     "tsr_ann": 0.1301
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 5,
+     "tsr_cum": 0.8373,
+     "tsr_ann": 0.1294
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 6,
+     "tsr_cum": 0.6344,
+     "tsr_ann": 0.1032
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 7,
+     "tsr_cum": 0.5683,
+     "tsr_ann": 0.0942
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 8,
+     "tsr_cum": 0.3275,
+     "tsr_ann": 0.0583
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 9,
+     "tsr_cum": 0.3153,
+     "tsr_ann": 0.0563
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 10,
+     "tsr_cum": 0.1602,
+     "tsr_ann": 0.0302
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 11,
+     "tsr_cum": 0.1589,
+     "tsr_ann": 0.0299
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 12,
+     "tsr_cum": 0.1184,
+     "tsr_ann": 0.0226
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.1143,
+     "tsr_ann": 0.0219
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 14,
+     "tsr_cum": 0.1035,
+     "tsr_ann": 0.0199
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 15,
+     "tsr_cum": 0.0891,
+     "tsr_ann": 0.0172
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": 0.0635,
+     "tsr_ann": 0.0124
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 17,
+     "tsr_cum": 0.0623,
+     "tsr_ann": 0.0122
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 18,
+     "tsr_cum": 0.0373,
+     "tsr_ann": 0.0074
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 19,
+     "tsr_cum": -0.0772,
+     "tsr_ann": -0.0159
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 20,
+     "tsr_cum": -0.1978,
+     "tsr_ann": -0.0431
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 21,
+     "tsr_cum": -0.7053,
+     "tsr_ann": -0.2168
+    }
+   ],
+   "2019": [
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 1,
+     "tsr_cum": 1.4704,
+     "tsr_ann": 0.1983
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 2,
+     "tsr_cum": 1.1928,
+     "tsr_ann": 0.17
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 3,
+     "tsr_cum": 0.9077,
+     "tsr_ann": 0.1379
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 4,
+     "tsr_cum": 0.8877,
+     "tsr_ann": 0.1355
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 5,
+     "tsr_cum": 0.7935,
+     "tsr_ann": 0.1239
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 6,
+     "tsr_cum": 0.7028,
+     "tsr_ann": 0.1123
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 7,
+     "tsr_cum": 0.7005,
+     "tsr_ann": 0.112
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 0.6348,
+     "tsr_ann": 0.1033
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 9,
+     "tsr_cum": 0.5978,
+     "tsr_ann": 0.0983
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 10,
+     "tsr_cum": 0.4416,
+     "tsr_ann": 0.0759
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 11,
+     "tsr_cum": 0.4226,
+     "tsr_ann": 0.073
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 12,
+     "tsr_cum": 0.3978,
+     "tsr_ann": 0.0693
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.3637,
+     "tsr_ann": 0.064
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 14,
+     "tsr_cum": 0.3387,
+     "tsr_ann": 0.0601
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 15,
+     "tsr_cum": 0.3181,
+     "tsr_ann": 0.0568
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 16,
+     "tsr_cum": 0.3169,
+     "tsr_ann": 0.0566
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 17,
+     "tsr_cum": 0.3117,
+     "tsr_ann": 0.0558
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 18,
+     "tsr_cum": 0.22,
+     "tsr_ann": 0.0406
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 19,
+     "tsr_cum": -0.0844,
+     "tsr_ann": -0.0175
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 20,
+     "tsr_cum": -0.4051,
+     "tsr_ann": -0.0987
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 21,
+     "tsr_cum": -0.4377,
+     "tsr_ann": -0.1088
+    }
+   ],
+   "2020": [
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 1,
+     "tsr_cum": 4.9635,
+     "tsr_ann": 0.4292
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 2,
+     "tsr_cum": 2.9657,
+     "tsr_ann": 0.3172
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 3,
+     "tsr_cum": 2.9032,
+     "tsr_ann": 0.3131
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 4,
+     "tsr_cum": 2.6678,
+     "tsr_ann": 0.2968
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 5,
+     "tsr_cum": 2.6228,
+     "tsr_ann": 0.2936
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 6,
+     "tsr_cum": 2.2767,
+     "tsr_ann": 0.2679
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 7,
+     "tsr_cum": 2.197,
+     "tsr_ann": 0.2617
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 2.1116,
+     "tsr_ann": 0.2549
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 9,
+     "tsr_cum": 1.9943,
+     "tsr_ann": 0.2453
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 10,
+     "tsr_cum": 1.9783,
+     "tsr_ann": 0.2439
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 11,
+     "tsr_cum": 1.885,
+     "tsr_ann": 0.236
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 12,
+     "tsr_cum": 1.1807,
+     "tsr_ann": 0.1687
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.2538,
+     "tsr_ann": 0.0463
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 0.1643,
+     "tsr_ann": 0.0309
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 15,
+     "tsr_cum": 0.1327,
+     "tsr_ann": 0.0252
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": 0.0473,
+     "tsr_ann": 0.0093
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 17,
+     "tsr_cum": -0.0822,
+     "tsr_ann": -0.017
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 18,
+     "tsr_cum": -0.1272,
+     "tsr_ann": -0.0268
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 19,
+     "tsr_cum": -0.2452,
+     "tsr_ann": -0.0547
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 20,
+     "tsr_cum": -0.3302,
+     "tsr_ann": -0.077
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 21,
+     "tsr_cum": -0.6103,
+     "tsr_ann": -0.1718
+    }
+   ],
+   "2021": [
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 2.6201,
+     "tsr_ann": 0.2934
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 2,
+     "tsr_cum": 2.2854,
+     "tsr_ann": 0.2686
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 3,
+     "tsr_cum": 2.1473,
+     "tsr_ann": 0.2577
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 4,
+     "tsr_cum": 1.7009,
+     "tsr_ann": 0.2198
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 5,
+     "tsr_cum": 1.6236,
+     "tsr_ann": 0.2128
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 6,
+     "tsr_cum": 1.539,
+     "tsr_ann": 0.2048
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 7,
+     "tsr_cum": 1.5223,
+     "tsr_ann": 0.2033
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 8,
+     "tsr_cum": 1.331,
+     "tsr_ann": 0.1844
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 9,
+     "tsr_cum": 1.3278,
+     "tsr_ann": 0.1841
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 10,
+     "tsr_cum": 1.0469,
+     "tsr_ann": 0.154
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 11,
+     "tsr_cum": 0.8323,
+     "tsr_ann": 0.1287
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 12,
+     "tsr_cum": 0.6645,
+     "tsr_ann": 0.1073
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.3162,
+     "tsr_ann": 0.0565
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 0.2459,
+     "tsr_ann": 0.045
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 15,
+     "tsr_cum": 0.0486,
+     "tsr_ann": 0.0095
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": -0.0293,
+     "tsr_ann": -0.0059
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 17,
+     "tsr_cum": -0.1086,
+     "tsr_ann": -0.0227
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 18,
+     "tsr_cum": -0.1197,
+     "tsr_ann": -0.0252
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 19,
+     "tsr_cum": -0.1401,
+     "tsr_ann": -0.0297
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 20,
+     "tsr_cum": -0.3993,
+     "tsr_ann": -0.0969
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 21,
+     "tsr_cum": -0.6019,
+     "tsr_ann": -0.1683
+    }
+   ],
+   "2022": [
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 1.9597,
+     "tsr_ann": 0.2424
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 2,
+     "tsr_cum": 1.2413,
+     "tsr_ann": 0.1752
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 3,
+     "tsr_cum": 1.1459,
+     "tsr_ann": 0.165
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 4,
+     "tsr_cum": 1.1178,
+     "tsr_ann": 0.1619
+    },
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 5,
+     "tsr_cum": 1.0675,
+     "tsr_ann": 0.1563
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 6,
+     "tsr_cum": 0.9945,
+     "tsr_ann": 0.1481
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 7,
+     "tsr_cum": 0.7852,
+     "tsr_ann": 0.1229
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 0.7204,
+     "tsr_ann": 0.1146
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 9,
+     "tsr_cum": 0.7162,
+     "tsr_ann": 0.1141
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 10,
+     "tsr_cum": 0.7151,
+     "tsr_ann": 0.1139
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 11,
+     "tsr_cum": 0.6961,
+     "tsr_ann": 0.1115
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 12,
+     "tsr_cum": 0.6084,
+     "tsr_ann": 0.0997
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 13,
+     "tsr_cum": 0.5748,
+     "tsr_ann": 0.0951
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 0.5485,
+     "tsr_ann": 0.0914
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 15,
+     "tsr_cum": 0.4623,
+     "tsr_ann": 0.079
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": 0.1075,
+     "tsr_ann": 0.0206
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 17,
+     "tsr_cum": 0.079,
+     "tsr_ann": 0.0153
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 18,
+     "tsr_cum": -0.3779,
+     "tsr_ann": -0.0906
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 19,
+     "tsr_cum": -0.4407,
+     "tsr_ann": -0.1097
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 20,
+     "tsr_cum": -0.4709,
+     "tsr_ann": -0.1195
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 21,
+     "tsr_cum": -0.7492,
+     "tsr_ann": -0.2416
+    }
+   ],
+   "2023": [
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 4.6718,
+     "tsr_ann": 0.415
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 2,
+     "tsr_cum": 3.3859,
+     "tsr_ann": 0.344
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 3,
+     "tsr_cum": 2.6088,
+     "tsr_ann": 0.2926
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 4,
+     "tsr_cum": 2.1048,
+     "tsr_ann": 0.2543
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 5,
+     "tsr_cum": 1.881,
+     "tsr_ann": 0.2357
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 6,
+     "tsr_cum": 1.6282,
+     "tsr_ann": 0.2132
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 7,
+     "tsr_cum": 1.455,
+     "tsr_ann": 0.1968
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 8,
+     "tsr_cum": 1.3619,
+     "tsr_ann": 0.1876
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 9,
+     "tsr_cum": 1.0554,
+     "tsr_ann": 0.155
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 10,
+     "tsr_cum": 0.9827,
+     "tsr_ann": 0.1467
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 11,
+     "tsr_cum": 0.8935,
+     "tsr_ann": 0.1362
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 12,
+     "tsr_cum": 0.8048,
+     "tsr_ann": 0.1253
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.7818,
+     "tsr_ann": 0.1225
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 0.7084,
+     "tsr_ann": 0.1131
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 15,
+     "tsr_cum": 0.4216,
+     "tsr_ann": 0.0729
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 16,
+     "tsr_cum": 0.4022,
+     "tsr_ann": 0.0699
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 17,
+     "tsr_cum": 0.2302,
+     "tsr_ann": 0.0423
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 18,
+     "tsr_cum": -0.1621,
+     "tsr_ann": -0.0347
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 19,
+     "tsr_cum": -0.35,
+     "tsr_ann": -0.0826
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 20,
+     "tsr_cum": -0.5072,
+     "tsr_ann": -0.132
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 21,
+     "tsr_cum": -0.5652,
+     "tsr_ann": -0.1534
+    }
+   ],
+   "2024": [
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 3.3227,
+     "tsr_ann": 0.3401
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 2,
+     "tsr_cum": 2.0659,
+     "tsr_ann": 0.2512
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 3,
+     "tsr_cum": 1.7414,
+     "tsr_ann": 0.2235
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 4,
+     "tsr_cum": 1.6958,
+     "tsr_ann": 0.2194
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 5,
+     "tsr_cum": 1.6194,
+     "tsr_ann": 0.2124
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 6,
+     "tsr_cum": 1.3719,
+     "tsr_ann": 0.1886
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 7,
+     "tsr_cum": 1.2175,
+     "tsr_ann": 0.1727
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 8,
+     "tsr_cum": 0.9647,
+     "tsr_ann": 0.1446
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 9,
+     "tsr_cum": 0.511,
+     "tsr_ann": 0.0861
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 10,
+     "tsr_cum": 0.5011,
+     "tsr_ann": 0.0846
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 11,
+     "tsr_cum": 0.4297,
+     "tsr_ann": 0.0741
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 12,
+     "tsr_cum": 0.4073,
+     "tsr_ann": 0.0707
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 13,
+     "tsr_cum": 0.3776,
+     "tsr_ann": 0.0662
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 14,
+     "tsr_cum": 0.2905,
+     "tsr_ann": 0.0523
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 15,
+     "tsr_cum": 0.1023,
+     "tsr_ann": 0.0197
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 16,
+     "tsr_cum": 0.0742,
+     "tsr_ann": 0.0144
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 17,
+     "tsr_cum": 0.0581,
+     "tsr_ann": 0.0114
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 18,
+     "tsr_cum": 0.0248,
+     "tsr_ann": 0.0049
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 19,
+     "tsr_cum": 0.0039,
+     "tsr_ann": 0.0008
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 20,
+     "tsr_cum": -0.3424,
+     "tsr_ann": -0.0804
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 21,
+     "tsr_cum": -0.39,
+     "tsr_ann": -0.0941
+    }
+   ],
+   "2025": [
+    {
+     "ticker": "URI",
+     "name": "United Rentals",
+     "group": "Heavy Industrial",
+     "rank": 1,
+     "tsr_cum": 2.6033,
+     "tsr_ann": 0.2922
+    },
+    {
+     "ticker": "XOM",
+     "name": "ExxonMobil",
+     "group": "Oil Major",
+     "rank": 2,
+     "tsr_cum": 2.572,
+     "tsr_ann": 0.29
+    },
+    {
+     "ticker": "CAT",
+     "name": "Caterpillar",
+     "group": "Heavy Industrial",
+     "rank": 3,
+     "tsr_cum": 2.4612,
+     "tsr_ann": 0.2819
+    },
+    {
+     "ticker": "SCCO",
+     "name": "Southern Copper",
+     "group": "Mining",
+     "rank": 4,
+     "tsr_cum": 1.8287,
+     "tsr_ann": 0.2312
+    },
+    {
+     "ticker": "UAL",
+     "name": "United Airlines",
+     "group": "Airline",
+     "rank": 5,
+     "tsr_cum": 1.5854,
+     "tsr_ann": 0.2092
+    },
+    {
+     "ticker": "CMI",
+     "name": "Cummins",
+     "group": "Heavy Industrial",
+     "rank": 6,
+     "tsr_cum": 1.5379,
+     "tsr_ann": 0.2047
+    },
+    {
+     "ticker": "SHEL",
+     "name": "Shell",
+     "group": "Oil Major",
+     "rank": 7,
+     "tsr_cum": 1.52,
+     "tsr_ann": 0.203
+    },
+    {
+     "ticker": "PCAR",
+     "name": "PACCAR",
+     "group": "Heavy Industrial",
+     "rank": 8,
+     "tsr_cum": 1.2933,
+     "tsr_ann": 0.1806
+    },
+    {
+     "ticker": "CVX",
+     "name": "Chevron",
+     "group": "Oil Major",
+     "rank": 9,
+     "tsr_cum": 1.2321,
+     "tsr_ann": 0.1742
+    },
+    {
+     "ticker": "BP",
+     "name": "BP",
+     "group": "Oil Major",
+     "rank": 10,
+     "tsr_cum": 1.1747,
+     "tsr_ann": 0.1681
+    },
+    {
+     "ticker": "TTE",
+     "name": "TotalEnergies",
+     "group": "Oil Major",
+     "rank": 11,
+     "tsr_cum": 1.1058,
+     "tsr_ann": 0.1606
+    },
+    {
+     "ticker": "FCX",
+     "name": "Freeport-McMoRan",
+     "group": "Mining",
+     "rank": 12,
+     "tsr_cum": 1.0856,
+     "tsr_ann": 0.1584
+    },
+    {
+     "ticker": "NEM",
+     "name": "Newmont",
+     "group": "Mining",
+     "rank": 13,
+     "tsr_cum": 0.9523,
+     "tsr_ann": 0.1432
+    },
+    {
+     "ticker": "DE",
+     "name": "Deere & Co",
+     "group": "Heavy Industrial",
+     "rank": 14,
+     "tsr_cum": 0.8471,
+     "tsr_ann": 0.1306
+    },
+    {
+     "ticker": "DAL",
+     "name": "Delta Air Lines",
+     "group": "Airline",
+     "rank": 15,
+     "tsr_cum": 0.7741,
+     "tsr_ann": 0.1215
+    },
+    {
+     "ticker": "RIO",
+     "name": "Rio Tinto",
+     "group": "Mining",
+     "rank": 16,
+     "tsr_cum": 0.6025,
+     "tsr_ann": 0.0989
+    },
+    {
+     "ticker": "BHP",
+     "name": "BHP Group",
+     "group": "Mining",
+     "rank": 17,
+     "tsr_cum": 0.4383,
+     "tsr_ann": 0.0754
+    },
+    {
+     "ticker": "VALE",
+     "name": "Vale",
+     "group": "Mining",
+     "rank": 18,
+     "tsr_cum": 0.349,
+     "tsr_ann": 0.0617
+    },
+    {
+     "ticker": "UNP",
+     "name": "Union Pacific",
+     "group": "Rail",
+     "rank": 19,
+     "tsr_cum": 0.2425,
+     "tsr_ann": 0.0444
+    },
+    {
+     "ticker": "AAL",
+     "name": "American Airlines",
+     "group": "Airline",
+     "rank": 20,
+     "tsr_cum": -0.0279,
+     "tsr_ann": -0.0056
+    },
+    {
+     "ticker": "LUV",
+     "name": "Southwest Airlines",
+     "group": "Airline",
+     "rank": 21,
+     "tsr_cum": -0.0469,
+     "tsr_ann": -0.0096
+    }
+   ]
+  }
  }
 }
