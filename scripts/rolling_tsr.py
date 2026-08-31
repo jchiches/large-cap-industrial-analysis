@@ -63,24 +63,6 @@ UA = {"User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                      "Chrome/126.0 Safari/537.36")}
 
 
-def caps_from_stockanalysis(ticker: str) -> dict[int, float]:
-    """Annual market caps scraped from stockanalysis.com's history table."""
-    url = f"https://stockanalysis.com/stocks/{ticker.lower()}/market-cap/"
-    for attempt in (1, 2):
-        r = requests.get(url, headers=UA, timeout=30)
-        if r.status_code == 429 and attempt == 1:
-            time.sleep(20)
-            continue
-        r.raise_for_status()
-        rows = re.findall(
-            r">(20\d{2})</td>\s*<td[^>]*>\$?([\d.,]+)\s*([TBM])?",
-            r.text,
-        )
-        return {int(y): float(v.replace(",", "")) * CAP_SUFFIX.get(sfx or "B", 1e9)
-                for y, v, sfx in rows}
-    return {}
-
-
 def caps_from_shares(ticker: str, raw_ye: pd.Series,
                      current_cap: float | None) -> dict[int, float]:
     """Fallback: raw year-end close x Yahoo share-count history, calibrated
@@ -96,11 +78,51 @@ def caps_from_shares(ticker: str, raw_ye: pd.Series,
     if not est:
         return {}
     if current_cap:
+        # Calibrate ONLY for clear unit/ADR-ratio mismatches (2x, 6x, ...).
+        # A near-1 factor is just price drift between the estimate date and
+        # today; scaling by it would silently skew the whole series.
         latest = max(est)
         factor = current_cap / est[latest]
-        if 0.2 < factor < 5:
+        if not (0.6 < factor < 1.67) and 0.02 < factor < 50:
             est = {y: c * factor for y, c in est.items()}
+            print(f"{ticker}: unit calibration x{factor:.2f}")
     return est
+
+
+ADR_TICKERS = {"BHP", "RIO", "VALE", "SHEL", "TTE", "BP"}
+_cik_map: dict[str, int] | None = None
+EDGAR_UA = {"User-Agent": "large-cap-industrial-analysis research script"}
+
+
+def caps_from_edgar(ticker: str, raw_ye: pd.Series,
+                    need_years: list[int]) -> dict[int, float]:
+    """Fill years via SEC XBRL cover-page share counts x raw year-end close.
+
+    Both quantities are contemporaneous, so no calibration is needed. Not
+    used for ADRs/dual-listed names, whose ordinary-share counts don't pair
+    with the ADR price.
+    """
+    global _cik_map
+    if _cik_map is None:
+        r = requests.get("https://www.sec.gov/files/company_tickers.json",
+                         headers=EDGAR_UA, timeout=30)
+        r.raise_for_status()
+        _cik_map = {v["ticker"]: int(v["cik_str"]) for v in r.json().values()}
+    cik = _cik_map.get(ticker)
+    if not cik:
+        return {}
+    url = (f"https://data.sec.gov/api/xbrl/companyconcept/CIK{cik:010d}"
+           f"/dei/EntityCommonStockSharesOutstanding.json")
+    r = requests.get(url, headers=EDGAR_UA, timeout=30)
+    r.raise_for_status()
+    by_year: dict[int, float] = {}
+    for obs in r.json().get("units", {}).get("shares", []):
+        end = obs.get("end", "")
+        # cover-page counts on the 10-K for fiscal year Y have end = Y-12-31
+        if end.endswith("-12-31"):
+            by_year[int(end[:4])] = float(obs["val"])
+    return {y: float(raw_ye[y]) * by_year[y]
+            for y in need_years if y in by_year and y in raw_ye.index}
 
 
 def fetch_cap_history(tickers: list[str], raw_ye: pd.DataFrame,
@@ -109,18 +131,21 @@ def fetch_cap_history(tickers: list[str], raw_ye: pd.DataFrame,
     for t in tickers:
         caps: dict[int, float] = {}
         try:
-            caps = caps_from_stockanalysis(t)
-            src = "stockanalysis"
+            caps = caps_from_shares(t, raw_ye.get(t, pd.Series(dtype=float)),
+                                    current.get(t))
+            src = "yahoo shares"
         except Exception as exc:
-            print(f"{t}: stockanalysis failed ({exc}); trying share counts")
-        if not caps:
+            print(f"WARNING: no cap history for {t}: {exc}")
+            src = "none"
+        need = [y for y in YEARS if y not in caps]
+        if need and t not in ADR_TICKERS:
             try:
-                caps = caps_from_shares(t, raw_ye.get(t, pd.Series(dtype=float)),
-                                        current.get(t))
-                src = "yahoo shares"
+                extra = caps_from_edgar(t, raw_ye.get(t, pd.Series(dtype=float)), need)
+                if extra:
+                    caps.update(extra)
+                    src += f" + edgar ({len(extra)}y)"
             except Exception as exc:
-                print(f"WARNING: no cap history for {t}: {exc}")
-                src = "none"
+                print(f"{t}: EDGAR fill failed: {exc}")
         if caps:
             out[t] = caps
             print(f"{t}: {len(caps)} years of market cap via {src} "
