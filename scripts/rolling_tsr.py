@@ -90,8 +90,15 @@ def caps_from_shares(ticker: str, raw_ye: pd.Series,
 
 
 ADR_TICKERS = {"BHP", "RIO", "VALE", "SHEL", "TTE", "BP"}
-_cik_map: dict[str, int] | None = None
-EDGAR_UA = {"User-Agent": "large-cap-industrial-analysis research script"}
+EDGAR_UA = {"User-Agent": ("large-cap-industrial-analysis "
+                           "(+https://github.com/jchiches/large-cap-industrial-analysis)")}
+# SEC CIKs for the tickers we backfill (stable public identifiers; the
+# ticker->CIK index file 403s generic user agents on GitHub runners)
+CIK = {
+    "CAT": 18230, "DE": 315189, "CMI": 26172, "PCAR": 75362, "URI": 1067701,
+    "DAL": 27904, "UAL": 100517, "LUV": 92380, "AAL": 6201, "UNP": 100885,
+    "FCX": 831259, "NEM": 1164727, "SCCO": 1001838, "XOM": 34088, "CVX": 93410,
+}
 
 
 def caps_from_edgar(ticker: str, raw_ye: pd.Series,
@@ -102,13 +109,7 @@ def caps_from_edgar(ticker: str, raw_ye: pd.Series,
     used for ADRs/dual-listed names, whose ordinary-share counts don't pair
     with the ADR price.
     """
-    global _cik_map
-    if _cik_map is None:
-        r = requests.get("https://www.sec.gov/files/company_tickers.json",
-                         headers=EDGAR_UA, timeout=30)
-        r.raise_for_status()
-        _cik_map = {v["ticker"]: int(v["cik_str"]) for v in r.json().values()}
-    cik = _cik_map.get(ticker)
+    cik = CIK.get(ticker)
     if not cik:
         return {}
     url = (f"https://data.sec.gov/api/xbrl/companyconcept/CIK{cik:010d}"
