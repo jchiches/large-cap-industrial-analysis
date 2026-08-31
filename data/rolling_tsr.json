@@ -1,6 +1,338 @@
 {
  "window_years": 10,
  "as_of": "2026-08-31",
+ "companies": {
+  "GE": {
+   "name": "GE Aerospace",
+   "short": "GE Aerospace",
+   "group": "Industrial",
+   "mkt_cap": 355448151771.42615
+  },
+  "RTX": {
+   "name": "RTX Corporation",
+   "short": "RTX",
+   "group": "Industrial",
+   "mkt_cap": 285333885714.9092
+  },
+  "CAT": {
+   "name": "Caterpillar",
+   "short": "Caterpillar",
+   "group": "Industrial",
+   "mkt_cap": 367854829922.25
+  },
+  "UNP": {
+   "name": "Union Pacific",
+   "short": "Union Pacific",
+   "group": "Industrial",
+   "mkt_cap": 182624751015.74945
+  },
+  "HON": {
+   "name": "Honeywell",
+   "short": "Honeywell",
+   "group": "Industrial",
+   "mkt_cap": 68912264052.96204
+  },
+  "ETN": {
+   "name": "Eaton",
+   "short": "Eaton",
+   "group": "Industrial",
+   "mkt_cap": 156399473526.00098
+  },
+  "BA": {
+   "name": "Boeing",
+   "short": "Boeing",
+   "group": "Industrial",
+   "mkt_cap": 165835443385.24292
+  },
+  "DE": {
+   "name": "Deere & Co",
+   "short": "Deere",
+   "group": "Industrial",
+   "mkt_cap": 169952990553.81616
+  },
+  "ADP": {
+   "name": "Automatic Data Processing",
+   "short": "ADP",
+   "group": "Industrial",
+   "mkt_cap": 114205095997.21878
+  },
+  "LMT": {
+   "name": "Lockheed Martin",
+   "short": "Lockheed Martin",
+   "group": "Industrial",
+   "mkt_cap": 130131360444.51013
+  },
+  "UPS": {
+   "name": "United Parcel Service",
+   "short": "UPS",
+   "group": "Industrial",
+   "mkt_cap": 89612825589.8876
+  },
+  "TDG": {
+   "name": "TransDigm",
+   "short": "TransDigm",
+   "group": "Industrial",
+   "mkt_cap": 65556298734.82056
+  },
+  "PH": {
+   "name": "Parker Hannifin",
+   "short": "Parker Hannifin",
+   "group": "Industrial",
+   "mkt_cap": 125419755066.24463
+  },
+  "TT": {
+   "name": "Trane Technologies",
+   "short": "Trane",
+   "group": "Industrial",
+   "mkt_cap": 98781603665.83914
+  },
+  "GD": {
+   "name": "General Dynamics",
+   "short": "General Dynamics",
+   "group": "Industrial",
+   "mkt_cap": 102627757189.02008
+  },
+  "WM": {
+   "name": "Waste Management",
+   "short": "Waste Mgmt",
+   "group": "Industrial",
+   "mkt_cap": 87801438781.24072
+  },
+  "ITW": {
+   "name": "Illinois Tool Works",
+   "short": "Illinois Tool",
+   "group": "Industrial",
+   "mkt_cap": 79772481738.28125
+  },
+  "MMM": {
+   "name": "3M",
+   "short": "3M",
+   "group": "Industrial",
+   "mkt_cap": 89911044291.1481
+  },
+  "CTAS": {
+   "name": "Cintas",
+   "short": "Cintas",
+   "group": "Industrial",
+   "mkt_cap": 81706618034.0506
+  },
+  "NOC": {
+   "name": "Northrop Grumman",
+   "short": "Northrop",
+   "group": "Industrial",
+   "mkt_cap": 77505326135.32068
+  },
+  "EMR": {
+   "name": "Emerson Electric",
+   "short": "Emerson",
+   "group": "Industrial",
+   "mkt_cap": 86559399914.55078
+  },
+  "CSX": {
+   "name": "CSX",
+   "short": "CSX",
+   "group": "Industrial",
+   "mkt_cap": 94994911482.43808
+  },
+  "FDX": {
+   "name": "FedEx",
+   "short": "FedEx",
+   "group": "Industrial",
+   "mkt_cap": 78309514688.41736
+  },
+  "NSC": {
+   "name": "Norfolk Southern",
+   "short": "Norfolk Southern",
+   "group": "Industrial",
+   "mkt_cap": 78316445852.55914
+  },
+  "PCAR": {
+   "name": "PACCAR",
+   "short": "PACCAR",
+   "group": "Industrial",
+   "mkt_cap": 65974581281.41397
+  },
+  "CMI": {
+   "name": "Cummins",
+   "short": "Cummins",
+   "group": "Industrial",
+   "mkt_cap": 77759782121.00061
+  },
+  "JCI": {
+   "name": "Johnson Controls",
+   "short": "Johnson Controls",
+   "group": "Industrial",
+   "mkt_cap": 84555449579.00848
+  },
+  "GWW": {
+   "name": "W.W. Grainger",
+   "short": "Grainger",
+   "group": "Industrial",
+   "mkt_cap": 61674499655.028076
+  },
+  "URI": {
+   "name": "United Rentals",
+   "short": "United Rentals",
+   "group": "Industrial",
+   "mkt_cap": 64125324292.25
+  },
+  "RSG": {
+   "name": "Republic Services",
+   "short": "Republic Svcs",
+   "group": "Industrial",
+   "mkt_cap": 68012964730.47757
+  },
+  "PAYX": {
+   "name": "Paychex",
+   "short": "Paychex",
+   "group": "Industrial",
+   "mkt_cap": 45185950860.037384
+  },
+  "FAST": {
+   "name": "Fastenal",
+   "short": "Fastenal",
+   "group": "Industrial",
+   "mkt_cap": 57122427783.18613
+  },
+  "AME": {
+   "name": "AMETEK",
+   "short": "AMETEK",
+   "group": "Industrial",
+   "mkt_cap": 54162968895.0
+  },
+  "OTIS": {
+   "name": "Otis Worldwide",
+   "short": "Otis",
+   "group": "Industrial",
+   "mkt_cap": 27309217566.66256
+  },
+  "CARR": {
+   "name": "Carrier Global",
+   "short": "Carrier",
+   "group": "Industrial",
+   "mkt_cap": 48829823828.58909
+  },
+  "ODFL": {
+   "name": "Old Dominion Freight Line",
+   "short": "Old Dominion",
+   "group": "Industrial",
+   "mkt_cap": 41187246840.343506
+  },
+  "VRSK": {
+   "name": "Verisk Analytics",
+   "short": "Verisk",
+   "group": "Industrial",
+   "mkt_cap": 24960018977.326477
+  },
+  "IR": {
+   "name": "Ingersoll Rand",
+   "short": "Ingersoll Rand",
+   "group": "Industrial",
+   "mkt_cap": 30488995841.268173
+  },
+  "ROK": {
+   "name": "Rockwell Automation",
+   "short": "Rockwell",
+   "group": "Industrial",
+   "mkt_cap": 47846430914.67041
+  },
+  "DOV": {
+   "name": "Dover",
+   "short": "Dover",
+   "group": "Industrial",
+   "mkt_cap": 26758266116.57257
+  },
+  "WAB": {
+   "name": "Wabtec",
+   "short": "Wabtec",
+   "group": "Industrial",
+   "mkt_cap": 49360819843.44003
+  },
+  "HWM": {
+   "name": "Howmet Aerospace",
+   "short": "Howmet",
+   "group": "Industrial",
+   "mkt_cap": 105622552959.24057
+  },
+  "LHX": {
+   "name": "L3Harris Technologies",
+   "short": "L3Harris",
+   "group": "Industrial",
+   "mkt_cap": 48940926740.99658
+  },
+  "AXON": {
+   "name": "Axon Enterprise",
+   "short": "Axon",
+   "group": "Industrial",
+   "mkt_cap": 48801750726.28174
+  },
+  "XYL": {
+   "name": "Xylem",
+   "short": "Xylem",
+   "group": "Industrial",
+   "mkt_cap": 25989416473.683838
+  },
+  "EFX": {
+   "name": "Equifax",
+   "short": "Equifax",
+   "group": "Industrial",
+   "mkt_cap": 22833190254.6709
+  },
+  "CPRT": {
+   "name": "Copart",
+   "short": "Copart",
+   "group": "Industrial",
+   "mkt_cap": 31779545337.001144
+  },
+  "DAL": {
+   "name": "Delta Air Lines",
+   "short": "Delta",
+   "group": "Industrial",
+   "mkt_cap": 52655875811.40938
+  },
+  "EXPD": {
+   "name": "Expeditors International",
+   "short": "Expeditors",
+   "group": "Industrial",
+   "mkt_cap": 24824309242.01996
+  },
+  "SWK": {
+   "name": "Stanley Black & Decker",
+   "short": "Stanley B&D",
+   "group": "Industrial",
+   "mkt_cap": 14769427950.666214
+  },
+  "XOM": {
+   "name": "ExxonMobil",
+   "short": "ExxonMobil",
+   "group": "Oil Major",
+   "mkt_cap": 644377750858.4308
+  },
+  "CVX": {
+   "name": "Chevron",
+   "short": "Chevron",
+   "group": "Oil Major",
+   "mkt_cap": 395969238086.9076
+  },
+  "SHEL": {
+   "name": "Shell",
+   "short": "Shell",
+   "group": "Oil Major",
+   "mkt_cap": 250225282762.0247
+  },
+  "TTE": {
+   "name": "TotalEnergies",
+   "short": "TotalEnergies",
+   "group": "Oil Major",
+   "mkt_cap": 191063839652.58725
+  },
+  "BP": {
+   "name": "BP",
+   "short": "BP",
+   "group": "Oil Major",
+   "mkt_cap": 108550681368.86047
+  }
+ },
  "note": "10-year TSR = change in dividend- and split-adjusted price (dividends reinvested) between year-end Y-10 and year-end Y. Source: Yahoo Finance monthly adjusted closes.",
  "years": {
   "2011": [
@@ -611,7 +943,7 @@
     "name": "Trane Technologies",
     "group": "Industrial",
     "rank": 29,
-    "tsr_cum": 1.6091,
+    "tsr_cum": 1.609,
     "tsr_ann": 0.1006
    },
    {
@@ -1295,7 +1627,7 @@
     "name": "Chevron",
     "group": "Oil Major",
     "rank": 20,
-    "tsr_cum": 1.9624,
+    "tsr_cum": 1.9625,
     "tsr_ann": 0.1147
    },
    {
@@ -2341,7 +2673,7 @@
     "name": "CSX",
     "group": "Industrial",
     "rank": 8,
-    "tsr_cum": 3.6434,
+    "tsr_cum": 3.6433,
     "tsr_ann": 0.166
    },
    {
@@ -3393,7 +3725,7 @@
     "name": "RTX Corporation",
     "group": "Industrial",
     "rank": 41,
-    "tsr_cum": 1.728,
+    "tsr_cum": 1.7279,
     "tsr_ann": 0.1056
    },
    {
@@ -4367,7 +4699,7 @@
     "name": "Automatic Data Processing",
     "group": "Industrial",
     "rank": 11,
-    "tsr_cum": 4.9691,
+    "tsr_cum": 4.9692,
     "tsr_ann": 0.1956
    },
    {
@@ -4817,7 +5149,7 @@
     "name": "Automatic Data Processing",
     "group": "Industrial",
     "rank": 16,
-    "tsr_cum": 3.09,
+    "tsr_cum": 3.0899,
     "tsr_ann": 0.1513
    },
    {
