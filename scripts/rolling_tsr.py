@@ -51,6 +51,17 @@ def year_end_series(px: pd.DataFrame) -> pd.DataFrame:
     return ye
 
 
+def fetch_market_caps(tickers: list[str]) -> dict[str, float | None]:
+    caps: dict[str, float | None] = {}
+    for t in tickers:
+        try:
+            caps[t] = float(yf.Ticker(t).fast_info["marketCap"])
+        except Exception as exc:
+            print(f"WARNING: no market cap for {t}: {exc}")
+            caps[t] = None
+    return caps
+
+
 def main() -> None:
     uni = pd.read_csv(UNIVERSE)
     tickers = uni["ticker"].tolist()
@@ -89,9 +100,21 @@ def main() -> None:
         print(f"{year}: {len(ranked)} tickers, "
               f"#1 {ranked.index[0]} ({ann[ranked.index[0]]:+.1%}/yr)")
 
+    caps = fetch_market_caps([t for t in tickers if t in px.columns])
+    companies = {
+        t: {
+            "name": m["name"],
+            "short": m.get("short_name", m["name"]),
+            "group": m["group"],
+            "mkt_cap": caps.get(t),
+        }
+        for t, m in meta.items()
+    }
+
     out = {
         "window_years": WINDOW,
         "as_of": pd.Timestamp.utcnow().strftime("%Y-%m-%d"),
+        "companies": companies,
         "note": ("10-year TSR = change in dividend- and split-adjusted price "
                  "(dividends reinvested) between year-end Y-10 and year-end Y. "
                  "Source: Yahoo Finance monthly adjusted closes."),
