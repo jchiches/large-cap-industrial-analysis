@@ -6,22 +6,24 @@ for every ticker in universe/tsr_universe.csv, then for each year-end
 and cross-sectional rank. Output feeds the bump chart.
 
 Usage:
-    python scripts/rolling_tsr.py
+    python scripts/rolling_tsr.py [universe_csv] [out_json] [out_prices_csv]
 
-Writes:
-    data/monthly_adj_close.csv   raw monthly adjusted closes
-    data/rolling_tsr.json        per-year TSR + rank per ticker
+Defaults to the full chart universe:
+    python scripts/rolling_tsr.py universe/tsr_universe.csv \
+        data/rolling_tsr.json data/monthly_adj_close.csv
 """
 
 import json
+import sys
 from pathlib import Path
 
 import pandas as pd
 import yfinance as yf
 
 ROOT = Path(__file__).resolve().parent.parent
-UNIVERSE = ROOT / "universe" / "tsr_universe.csv"
-DATA_DIR = ROOT / "data"
+UNIVERSE = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "universe" / "tsr_universe.csv"
+OUT_JSON = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "data" / "rolling_tsr.json"
+OUT_PRICES = Path(sys.argv[3]) if len(sys.argv) > 3 else ROOT / "data" / "monthly_adj_close.csv"
 
 START = "2000-11-01"   # need Dec-2001 for the window ending Dec-2011
 END = "2026-01-15"     # through Dec-2025 monthly bar
@@ -72,8 +74,8 @@ def main() -> None:
     if missing:
         print(f"WARNING: no data at all for {missing}")
 
-    DATA_DIR.mkdir(exist_ok=True)
-    px.to_csv(DATA_DIR / "monthly_adj_close.csv")
+    OUT_PRICES.parent.mkdir(exist_ok=True)
+    px.to_csv(OUT_PRICES)
 
     ye = year_end_series(px)
 
@@ -120,8 +122,8 @@ def main() -> None:
                  "Source: Yahoo Finance monthly adjusted closes."),
         "years": records,
     }
-    (DATA_DIR / "rolling_tsr.json").write_text(json.dumps(out, indent=1))
-    print(f"Wrote {DATA_DIR / 'rolling_tsr.json'}")
+    OUT_JSON.write_text(json.dumps(out, indent=1))
+    print(f"Wrote {OUT_JSON}")
 
 
 if __name__ == "__main__":

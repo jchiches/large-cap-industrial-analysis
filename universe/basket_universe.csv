@@ -1,0 +1,22 @@
+ticker,name,short_name,group
+CAT,Caterpillar,Caterpillar,Heavy Industrial
+DE,Deere & Co,Deere,Heavy Industrial
+CMI,Cummins,Cummins,Heavy Industrial
+PCAR,PACCAR,PACCAR,Heavy Industrial
+URI,United Rentals,United Rentals,Heavy Industrial
+DAL,Delta Air Lines,Delta,Airline
+UAL,United Airlines,United,Airline
+LUV,Southwest Airlines,Southwest,Airline
+AAL,American Airlines,American,Airline
+UNP,Union Pacific,Union Pacific,Rail
+BHP,BHP Group,BHP,Mining
+RIO,Rio Tinto,Rio Tinto,Mining
+VALE,Vale,Vale,Mining
+FCX,Freeport-McMoRan,Freeport,Mining
+NEM,Newmont,Newmont,Mining
+SCCO,Southern Copper,Southern Copper,Mining
+XOM,ExxonMobil,ExxonMobil,Oil Major
+CVX,Chevron,Chevron,Oil Major
+SHEL,Shell,Shell,Oil Major
+TTE,TotalEnergies,TotalEnergies,Oil Major
+BP,BP,BP,Oil Major

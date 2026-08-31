@@ -19,13 +19,19 @@ jobs:
       - name: Install dependencies
         run: pip install yfinance pandas
 
-      - name: Compute rolling TSR
+      - name: Compute rolling TSR (full universe)
         run: python scripts/rolling_tsr.py
+
+      - name: Compute rolling TSR (basket)
+        run: >
+          python scripts/rolling_tsr.py universe/basket_universe.csv
+          data/basket_tsr.json data/basket_monthly_adj_close.csv
 
       - name: Commit results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f data/rolling_tsr.json data/monthly_adj_close.csv
+          git add -f data/rolling_tsr.json data/monthly_adj_close.csv \
+                     data/basket_tsr.json data/basket_monthly_adj_close.csv
           git diff --cached --quiet || git commit -m "Update rolling TSR data [skip ci]"
           git push
