@@ -14,10 +14,13 @@ Defaults to the full chart universe:
 """
 
 import json
+import re
 import sys
+import time
 from pathlib import Path
 
 import pandas as pd
+import requests
 import yfinance as yf
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -28,7 +31,8 @@ OUT_PRICES = Path(sys.argv[3]) if len(sys.argv) > 3 else ROOT / "data" / "monthl
 START = "2000-11-01"   # need Dec-2001 for the window ending Dec-2011
 END = "2026-01-15"     # through Dec-2025 monthly bar
 YEARS = range(2011, 2026)
-WINDOW = 10
+WINDOW = 10           # headline window; WINDOWS are all emitted under "windows"
+WINDOWS = (10, 5)
 
 
 def fetch_monthly_closes(tickers: list[str]) -> pd.DataFrame:
@@ -51,6 +55,38 @@ def year_end_series(px: pd.DataFrame) -> pd.DataFrame:
     ye = px.groupby(px.index.year).last()
     ye.index.name = "year"
     return ye
+
+
+CAP_SUFFIX = {"T": 1e12, "B": 1e9, "M": 1e6}
+
+
+def fetch_cap_history(tickers: list[str]) -> dict[str, dict[int, float]]:
+    """Year-end market caps from Macrotrends' annual market-cap tables.
+
+    Macrotrends aggregates dual-listed structures (BHP, Rio Tinto) and ADRs
+    into one company-level cap, which EDGAR share counts do not.
+    """
+    headers = {"User-Agent": "Mozilla/5.0 (research script)"}
+    out: dict[str, dict[int, float]] = {}
+    for t in tickers:
+        url = f"https://www.macrotrends.net/stocks/charts/{t}/x/market-cap"
+        try:
+            r = requests.get(url, headers=headers, timeout=30)
+            r.raise_for_status()
+            rows = re.findall(
+                r"<td[^>]*>(20\d{2})</td>\s*<td[^>]*>\$([\d.,]+)\s*([TBM])</td>",
+                r.text,
+            )
+            caps = {int(y): float(v.replace(",", "")) * CAP_SUFFIX[sfx]
+                    for y, v, sfx in rows}
+            if caps:
+                out[t] = caps
+            print(f"{t}: {len(caps)} years of market cap"
+                  + (f" ({min(caps)}-{max(caps)})" if caps else ""))
+        except Exception as exc:
+            print(f"WARNING: no cap history for {t}: {exc}")
+        time.sleep(1)
+    return out
 
 
 def fetch_market_caps(tickers: list[str]) -> dict[str, float | None]:
@@ -79,36 +115,45 @@ def main() -> None:
 
     ye = year_end_series(px)
 
-    records: dict[str, list[dict]] = {}
-    for year in YEARS:
-        start_year = year - WINDOW
-        if start_year not in ye.index or year not in ye.index:
-            continue
-        p0, p1 = ye.loc[start_year], ye.loc[year]
-        tsr = (p1 / p0 - 1.0).dropna()
-        ann = (1.0 + tsr) ** (1.0 / WINDOW) - 1.0
-        ranked = tsr.sort_values(ascending=False)
-        records[str(year)] = [
-            {
-                "ticker": t,
-                "name": meta[t]["name"],
-                "group": meta[t]["group"],
-                "rank": i + 1,
-                "tsr_cum": round(float(tsr[t]), 4),
-                "tsr_ann": round(float(ann[t]), 4),
-            }
-            for i, t in enumerate(ranked.index)
-        ]
-        print(f"{year}: {len(ranked)} tickers, "
-              f"#1 {ranked.index[0]} ({ann[ranked.index[0]]:+.1%}/yr)")
+    def window_records(window: int) -> dict[str, list[dict]]:
+        recs: dict[str, list[dict]] = {}
+        for year in YEARS:
+            start_year = year - window
+            if start_year not in ye.index or year not in ye.index:
+                continue
+            p0, p1 = ye.loc[start_year], ye.loc[year]
+            tsr = (p1 / p0 - 1.0).dropna()
+            ann = (1.0 + tsr) ** (1.0 / window) - 1.0
+            ranked = tsr.sort_values(ascending=False)
+            recs[str(year)] = [
+                {
+                    "ticker": t,
+                    "name": meta[t]["name"],
+                    "group": meta[t]["group"],
+                    "rank": i + 1,
+                    "tsr_cum": round(float(tsr[t]), 4),
+                    "tsr_ann": round(float(ann[t]), 4),
+                }
+                for i, t in enumerate(ranked.index)
+            ]
+            print(f"{window}y {year}: {len(ranked)} tickers, "
+                  f"#1 {ranked.index[0]} ({ann[ranked.index[0]]:+.1%}/yr)")
+        return recs
 
-    caps = fetch_market_caps([t for t in tickers if t in px.columns])
+    windows = {str(w): window_records(w) for w in WINDOWS}
+    records = windows[str(WINDOW)]
+
+    live = [t for t in tickers if t in px.columns]
+    caps = fetch_market_caps(live)
+    cap_hist = fetch_cap_history(live)
     companies = {
         t: {
             "name": m["name"],
             "short": m.get("short_name", m["name"]),
             "group": m["group"],
             "mkt_cap": caps.get(t),
+            "caps": {y: c for y, c in cap_hist.get(t, {}).items()
+                     if min(YEARS) <= y <= max(YEARS)},
         }
         for t, m in meta.items()
     }
@@ -121,6 +166,7 @@ def main() -> None:
                  "(dividends reinvested) between year-end Y-10 and year-end Y. "
                  "Source: Yahoo Finance monthly adjusted closes."),
         "years": records,
+        "windows": windows,
     }
     OUT_JSON.write_text(json.dumps(out, indent=1))
     print(f"Wrote {OUT_JSON}")
