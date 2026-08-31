@@ -96,7 +96,7 @@
    "name": "Eaton",
    "short": "Eaton",
    "group": "Industrial",
-   "mkt_cap": 156050005895.9961,
+   "mkt_cap": 156090193896.48438,
    "caps": {
     "2015": 24084112423.706055,
     "2016": 30304551345.825195,
@@ -509,7 +509,7 @@
    "name": "W.W. Grainger",
    "short": "Grainger",
    "group": "Industrial",
-   "mkt_cap": 61825106738.244385,
+   "mkt_cap": 61678212079.60986,
    "caps": {
     "2015": 12720423280.059814,
     "2016": 13657298675.0,
@@ -637,7 +637,7 @@
    "name": "Carrier Global",
    "short": "Carrier",
    "group": "Industrial",
-   "mkt_cap": 48356393240.95212,
+   "mkt_cap": 47992205824.79617,
    "caps": {
     "2020": 32691433792.6875,
     "2021": 47003573156.29419,
@@ -850,7 +850,7 @@
    "name": "Copart",
    "short": "Copart",
    "group": "Industrial",
-   "mkt_cap": 31779545337.001144,
+   "mkt_cap": 30542522345.123833,
    "caps": {
     "2015": 571276021.0232735,
     "2016": 793651280.3144455,
@@ -2273,7 +2273,7 @@
     "name": "Automatic Data Processing",
     "group": "Industrial",
     "rank": 17,
-    "tsr_cum": 2.0629,
+    "tsr_cum": 2.0628,
     "tsr_ann": 0.1184
    },
    {
@@ -2337,7 +2337,7 @@
     "name": "Illinois Tool Works",
     "group": "Industrial",
     "rank": 25,
-    "tsr_cum": 1.5862,
+    "tsr_cum": 1.5861,
     "tsr_ann": 0.0997
    },
    {
@@ -4395,7 +4395,7 @@
     "name": "RTX Corporation",
     "group": "Industrial",
     "rank": 41,
-    "tsr_cum": 1.728,
+    "tsr_cum": 1.7279,
     "tsr_ann": 0.1056
    },
    {
@@ -4581,7 +4581,7 @@
     "name": "L3Harris Technologies",
     "group": "Industrial",
     "rank": 14,
-    "tsr_cum": 4.2313,
+    "tsr_cum": 4.2314,
     "tsr_ann": 0.1799
    },
    {
@@ -6823,7 +6823,7 @@
     "name": "Shell",
     "group": "Oil Major",
     "rank": 39,
-    "tsr_cum": 1.6391,
+    "tsr_cum": 1.6392,
     "tsr_ann": 0.1019
    },
    {
@@ -8194,7 +8194,7 @@
      "name": "Automatic Data Processing",
      "group": "Industrial",
      "rank": 17,
-     "tsr_cum": 2.0629,
+     "tsr_cum": 2.0628,
      "tsr_ann": 0.1184
     },
     {
@@ -8258,7 +8258,7 @@
      "name": "Illinois Tool Works",
      "group": "Industrial",
      "rank": 25,
-     "tsr_cum": 1.5862,
+     "tsr_cum": 1.5861,
      "tsr_ann": 0.0997
     },
     {
@@ -10316,7 +10316,7 @@
      "name": "RTX Corporation",
      "group": "Industrial",
      "rank": 41,
-     "tsr_cum": 1.728,
+     "tsr_cum": 1.7279,
      "tsr_ann": 0.1056
     },
     {
@@ -10502,7 +10502,7 @@
      "name": "L3Harris Technologies",
      "group": "Industrial",
      "rank": 14,
-     "tsr_cum": 4.2313,
+     "tsr_cum": 4.2314,
      "tsr_ann": 0.1799
     },
     {
@@ -12744,7 +12744,7 @@
      "name": "Shell",
      "group": "Oil Major",
      "rank": 39,
-     "tsr_cum": 1.6391,
+     "tsr_cum": 1.6392,
      "tsr_ann": 0.1019
     },
     {
@@ -13632,7 +13632,7 @@
      "name": "United Rentals",
      "group": "Industrial",
      "rank": 1,
-     "tsr_cum": 7.5472,
+     "tsr_cum": 7.5471,
      "tsr_ann": 0.5359
     },
     {
@@ -17153,7 +17153,7 @@
      "group": "Industrial",
      "rank": 35,
      "tsr_cum": 0.8323,
-     "tsr_ann": 0.1288
+     "tsr_ann": 0.1287
     },
     {
      "ticker": "NOC",

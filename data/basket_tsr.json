@@ -2745,7 +2745,7 @@
     "name": "Shell",
     "group": "Oil Major",
     "rank": 14,
-    "tsr_cum": 1.6392,
+    "tsr_cum": 1.6391,
     "tsr_ann": 0.1019
    },
    {
@@ -5170,7 +5170,7 @@
      "name": "Shell",
      "group": "Oil Major",
      "rank": 14,
-     "tsr_cum": 1.6392,
+     "tsr_cum": 1.6391,
      "tsr_ann": 0.1019
     },
     {
@@ -5570,7 +5570,7 @@
      "name": "United Rentals",
      "group": "Heavy Industrial",
      "rank": 1,
-     "tsr_cum": 7.5471,
+     "tsr_cum": 7.5472,
      "tsr_ann": 0.5359
     },
     {
@@ -5740,7 +5740,7 @@
      "name": "American Airlines",
      "group": "Airline",
      "rank": 1,
-     "tsr_cum": 10.1366,
+     "tsr_cum": 10.1365,
      "tsr_ann": 0.6194
     },
     {
@@ -6096,7 +6096,7 @@
      "name": "Southwest Airlines",
      "group": "Airline",
      "rank": 3,
-     "tsr_cum": 5.0342,
+     "tsr_cum": 5.0343,
      "tsr_ann": 0.4326
     },
     {
@@ -7480,7 +7480,7 @@
      "name": "PACCAR",
      "group": "Heavy Industrial",
      "rank": 6,
-     "tsr_cum": 1.3719,
+     "tsr_cum": 1.372,
      "tsr_ann": 0.1886
     },
     {
