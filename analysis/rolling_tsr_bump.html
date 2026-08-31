@@ -1,4 +1,5 @@
 <title>Industrials vs Big Oil</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   :root {
     --bg: #f9f9f7;
@@ -134,10 +135,25 @@
   #tip .yr { color: var(--muted); margin: 1px 0 5px; }
   #tip table { border-collapse: collapse; }
   #tip td { padding: 1px 0; color: var(--ink2); }
-  #tip td.v { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-weight: 600; color: var(--ink); padding-left: 12px; text-align: right; font-variant-numeric: tabular-nums; }
+  #tip td.v { font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace; font-weight: 600; color: var(--ink); padding-left: 12px; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 
   .note { color: var(--muted); font-size: 12px; line-height: 1.55; max-width: 100ch; margin: 14px 2px 0; }
   .note a { color: var(--ink2); }
+
+  @media (max-width: 760px) {
+    body { padding: 16px 10px 32px; }
+    h1 { font-size: 21px; }
+    .sub { font-size: 12.5px; }
+    .controls { gap: 6px 8px; margin: 12px 0 10px; }
+    .chip { font-size: 11px; padding: 3px 8px; gap: 5px; }
+    .spacer { flex-basis: 100%; flex-grow: 0; }
+    label.sel { flex: 1; }
+    select { flex: 1; max-width: none; }
+    #tip { max-width: min(250px, calc(100vw - 24px)); }
+  }
+  @media (pointer: coarse) {
+    .series path.hit { stroke-width: 15px; }
+  }
 
   details { margin-top: 22px; }
   summary { cursor: pointer; font-weight: 600; font-size: 14px; color: var(--ink2); }
@@ -212,17 +228,8 @@
   const nInd = all.filter(s => !s.oil).length;
   document.querySelector('#controls .chip').lastChild.textContent = `Industrials (${nInd})`;
 
-  // ---- geometry ------------------------------------------------------------
-  const mL = 178, mR = 158, mT = 108, mB = 46, colW = 78, rowH = 27;
-  const maxRank = Math.max(...[...stats.values()].map(s => s.n));
-  const W = mL + mR + colW * (YEARS.length - 1);
-  const H = mT + rowH * maxRank + mB;
-  const X = y => mL + colW * YEARS.indexOf(y);
-  const Y = r => mT + rowH * (r - 1) + rowH / 2;
-
+  // ---- svg helpers ---------------------------------------------------------
   const svg = document.getElementById('chart');
-  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
-  svg.setAttribute('width', W); svg.setAttribute('height', H);
   const NS = 'http://www.w3.org/2000/svg';
   const el = (tag, attrs, parent) => {
     const n = document.createElementNS(NS, tag);
@@ -235,31 +242,54 @@
   const fmtCap = v => v == null ? '' :
     v >= 995e9 ? '$' + (v / 1e12).toFixed(1) + 'T' : '$' + Math.round(v / 1e9) + 'B';
 
+  const tip = document.getElementById('tip');
+  let pinned = null;
+  const maxRank = Math.max(...[...stats.values()].map(s => s.n));
+  const mq = window.matchMedia('(max-width: 760px)');
+
+  function render() {
+  const compact = mq.matches;
+  const mL = compact ? 148 : 178, mR = compact ? 116 : 158,
+        mT = compact ? 94 : 108, mB = compact ? 40 : 46,
+        colW = compact ? 54 : 78, rowH = compact ? 22 : 27;
+  // font sizes: year labels, context strip, tickers, TSR values, name·cap subline, rank ruler
+  const F = compact ? { yr: 11.5, strip: 10, tick: 10, val: 8.5, sub: 8, rk: 9 }
+                    : { yr: 13, strip: 11, tick: 11, val: 9.5, sub: 8.5, rk: 10 };
+  const chW = F.tick * 0.62;                    // approx mono char width for label offsets
+  const yYr = compact ? 22 : 26, yBest = compact ? 44 : 52,
+        yMed = compact ? 61 : 72, ySep = compact ? 72 : 84;
+  const W = mL + mR + colW * (YEARS.length - 1);
+  const H = mT + rowH * maxRank + mB;
+  const X = y => mL + colW * YEARS.indexOf(y);
+  const Y = r => mT + rowH * (r - 1) + rowH / 2;
+
+  svg.replaceChildren();
+  svg.classList.remove('active');
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  svg.setAttribute('width', W); svg.setAttribute('height', H);
+
   // ---- chrome: grid, year labels, context strip ---------------------------
   const chrome = el('g', {});
   for (const y of YEARS) {
     const x = X(y);
     el('line', { x1: x, y1: mT - 6, x2: x, y2: H - mB + 4, stroke: 'var(--grid)', 'stroke-width': 1 }, chrome);
-    txt(y, { x, y: 26, 'text-anchor': 'middle', 'font-size': 13, 'font-weight': 600, fill: 'var(--ink)' }, chrome);
-    txt(y, { x, y: H - 12, 'text-anchor': 'middle', 'font-size': 11.5, fill: 'var(--muted)' }, chrome);
+    txt(y, { x, y: yYr, 'text-anchor': 'middle', 'font-size': F.yr, 'font-weight': 600, fill: 'var(--ink)' }, chrome);
+    txt(y, { x, y: H - 12, 'text-anchor': 'middle', 'font-size': F.yr - 1, fill: 'var(--muted)' }, chrome);
     const st = stats.get(y);
-    txt(fmt(st.best), { x, y: 52, 'text-anchor': 'middle', 'font-size': 11, 'font-weight': 600, fill: 'var(--ink2)' }, chrome);
-    txt(fmt(st.median), { x, y: 72, 'text-anchor': 'middle', 'font-size': 11, fill: 'var(--muted)' }, chrome);
+    txt(fmt(st.best), { x, y: yBest, 'text-anchor': 'middle', 'font-size': F.strip, 'font-weight': 600, fill: 'var(--ink2)' }, chrome);
+    txt(fmt(st.median), { x, y: yMed, 'text-anchor': 'middle', 'font-size': F.strip, fill: 'var(--muted)' }, chrome);
   }
-  const cap = (s, y) => txt(s, { x: mL - 34, y, 'text-anchor': 'end', 'font-size': 9.5, 'letter-spacing': '0.08em', fill: 'var(--muted)' }, chrome);
-  cap('#1 TSR / YR', 52); cap('MEDIAN / YR', 72);
-  el('line', { x1: mL - 8, y1: 84, x2: W - mR + 8, y2: 84, stroke: 'var(--axis)', 'stroke-width': 1 }, chrome);
+  const cap = (s, y) => txt(s, { x: mL - 34, y, 'text-anchor': 'end', 'font-size': compact ? 8.5 : 9.5, 'letter-spacing': '0.08em', fill: 'var(--muted)' }, chrome);
+  cap('#1 TSR / YR', yBest); cap('MEDIAN / YR', yMed);
+  el('line', { x1: mL - 8, y1: ySep, x2: W - mR + 8, y2: ySep, stroke: 'var(--axis)', 'stroke-width': 1 }, chrome);
   for (let r = 10; r <= maxRank; r += 10) {
     el('line', { x1: mL - 6, y1: Y(r), x2: W - mR + 6, y2: Y(r), stroke: 'var(--grid)', 'stroke-width': 1, 'stroke-dasharray': '2 5' }, chrome);
-    txt(r, { x: 12, y: Y(r) + 3.5, 'font-size': 10, fill: 'var(--muted)' }, chrome);
-    txt(r, { x: W - 12, y: Y(r) + 3.5, 'text-anchor': 'end', 'font-size': 10, fill: 'var(--muted)' }, chrome);
+    txt(r, { x: 12, y: Y(r) + 3.5, 'font-size': F.rk, fill: 'var(--muted)' }, chrome);
+    txt(r, { x: W - 12, y: Y(r) + 3.5, 'text-anchor': 'end', 'font-size': F.rk, fill: 'var(--muted)' }, chrome);
   }
-  txt('RANK', { x: 12, y: mT - 8, 'font-size': 9.5, 'letter-spacing': '0.08em', fill: 'var(--muted)' }, chrome);
+  txt('RANK', { x: 12, y: mT - 8, 'font-size': compact ? 8.5 : 9.5, 'letter-spacing': '0.08em', fill: 'var(--muted)' }, chrome);
 
   // ---- series --------------------------------------------------------------
-  const tip = document.getElementById('tip');
-  let pinned = null;
-
   for (const s of all) {
     const color = s.oil ? `var(${OIL_COLOR[s.ticker]})` : 'var(--ind-line)';
     const dotColor = s.oil ? `var(${OIL_COLOR[s.ticker]})` : 'var(--ind-dot)';
@@ -281,7 +311,7 @@
     for (const y of YEARS) {
       const p = s.pts.get(y);
       if (!p) continue;
-      el('circle', { cx: X(y), cy: Y(p.rank), r: s.oil ? 3.4 : 2.3, fill: dotColor, stroke: 'var(--surface)', 'stroke-width': s.oil ? 1.4 : 0.8 }, g);
+      el('circle', { cx: X(y), cy: Y(p.rank), r: s.oil ? (compact ? 2.8 : 3.4) : (compact ? 1.8 : 2.3), fill: dotColor, stroke: 'var(--surface)', 'stroke-width': s.oil ? 1.4 : 0.8 }, g);
     }
 
     const co = COMPANIES[s.ticker] || {};
@@ -292,10 +322,10 @@
     if (pL) {
       const x = mL - 16, yy = Y(pL.rank);
       const gg = el('g', {}, g);
-      txt(s.ticker, { x, y: yy - 1.5, class: 'tick', 'text-anchor': 'end', 'font-size': 11, 'font-weight': 600, fill: tickFill }, gg);
-      txt(fmt(pL.tsr_ann), { x: x - (s.ticker.length + 1) * 6.8, y: yy - 1.5, 'text-anchor': 'end', 'font-size': 9.5, fill: 'var(--muted)' }, gg);
+      txt(s.ticker, { x, y: yy - 1.5, class: 'tick', 'text-anchor': 'end', 'font-size': F.tick, 'font-weight': 600, fill: tickFill }, gg);
+      txt(fmt(pL.tsr_ann), { x: x - (s.ticker.length + 1) * chW, y: yy - 1.5, 'text-anchor': 'end', 'font-size': F.val, fill: 'var(--muted)' }, gg);
       const sub = (co.short || s.name) + (co.mkt_cap != null ? ' · ' + fmtCap(co.mkt_cap) : '');
-      txt(sub, { x, y: yy + 9, 'text-anchor': 'end', 'font-size': 8.5, fill: 'var(--muted)' }, gg);
+      txt(sub, { x, y: yy + (compact ? 8 : 9), 'text-anchor': 'end', 'font-size': F.sub, fill: 'var(--muted)' }, gg);
     }
 
     // right axis: ticker + TSR on one line
@@ -303,8 +333,8 @@
     if (pR) {
       const x = W - mR + 16, yy = Y(pR.rank);
       const gg = el('g', {}, g);
-      txt(s.ticker, { x, y: yy + 3.5, class: 'tick', 'text-anchor': 'start', 'font-size': 11, 'font-weight': 600, fill: tickFill }, gg);
-      txt(fmt(pR.tsr_ann), { x: x + (s.ticker.length + 1) * 6.8, y: yy + 3.5, 'text-anchor': 'start', 'font-size': 9.5, fill: 'var(--muted)' }, gg);
+      txt(s.ticker, { x, y: yy + 3.5, class: 'tick', 'text-anchor': 'start', 'font-size': F.tick, 'font-weight': 600, fill: tickFill }, gg);
+      txt(fmt(pR.tsr_ann), { x: x + (s.ticker.length + 1) * chW, y: yy + 3.5, 'text-anchor': 'start', 'font-size': F.val, fill: 'var(--muted)' }, gg);
     }
 
     // interaction
@@ -344,9 +374,9 @@
       }
       tip.append(nm, yr, tb);
       const bw = tip.offsetWidth, vw = window.innerWidth;
-      let lx = ev.clientX + 14; if (lx + bw > vw - 10) lx = ev.clientX - bw - 14;
+      let lx = ev.clientX + 14; if (lx + bw > vw - 10) lx = Math.max(8, ev.clientX - bw - 14);
       tip.style.left = lx + 'px';
-      tip.style.top = Math.max(8, ev.clientY - 20) + 'px';
+      tip.style.top = Math.min(Math.max(8, ev.clientY - 20), window.innerHeight - tip.offsetHeight - 8) + 'px';
     };
     const on = () => { if (!pinned) { svg.classList.add('active'); g.classList.add('hl'); } };
     const off = () => { tip.hidden = true; if (!pinned) { svg.classList.remove('active'); g.classList.remove('hl'); } };
@@ -355,8 +385,21 @@
     hit.addEventListener('pointerleave', off);
     hit.addEventListener('focus', () => { on(); });
     hit.addEventListener('blur', off);
-    hit.addEventListener('click', ev => { ev.stopPropagation(); setPin(pinned === s.ticker ? null : s.ticker); });
+    hit.addEventListener('click', ev => {
+      ev.stopPropagation();
+      setPin(pinned === s.ticker ? null : s.ticker);
+      if (pinned === s.ticker) show(ev, nearestYear(ev.clientX));   // tap = pin + tooltip on touch
+    });
   }
+
+  if (pinned) {
+    svg.classList.add('active');
+    for (const g of svg.querySelectorAll('.series')) g.classList.toggle('hl', g.dataset.t === pinned);
+  }
+  } // render()
+
+  render();
+  mq.addEventListener('change', render);
 
   // ---- pinning -------------------------------------------------------------
   const picker = document.getElementById('picker');
@@ -367,6 +410,7 @@
   }
   function setPin(t) {
     pinned = t;
+    if (!t) tip.hidden = true;
     picker.value = t || '';
     svg.classList.toggle('active', !!t);
     for (const g of svg.querySelectorAll('.series')) g.classList.toggle('hl', g.dataset.t === t);
