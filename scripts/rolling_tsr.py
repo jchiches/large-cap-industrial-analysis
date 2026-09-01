@@ -74,7 +74,9 @@ def caps_from_shares(ticker: str, raw_ye: pd.Series,
     shares = shares[~shares.index.duplicated(keep="last")]
     sh_by_year = shares.groupby(shares.index.year).last()
     est = {int(y): float(raw_ye[y]) * float(sh_by_year[y])
-           for y in sh_by_year.index if y in raw_ye.index}
+           for y in sh_by_year.index
+           if y in raw_ye.index
+           and pd.notna(raw_ye[y]) and pd.notna(sh_by_year[y])}
     if not est:
         return {}
     if current_cap:
